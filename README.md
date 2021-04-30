@@ -1,2 +1,2 @@
-# parallel_project
- 
+# Parallel Computing Project
+## Firework Simulation

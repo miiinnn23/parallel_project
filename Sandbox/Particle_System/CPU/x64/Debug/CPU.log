@@ -1,3 +1,3 @@
 ﻿  cpu.cpp
-C:\Users\s2019112540\source\repos\Particle_System\CPU\cpu.cpp(113,25): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  CPU.vcxproj -> C:\Users\s2019112540\source\repos\Particle_System\x64\Debug\CPU.exe
+\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Sandbox\Particle_System\CPU\cpu.cpp(120,25): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CPU.vcxproj -> \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Sandbox\Particle_System\x64\Debug\CPU.exe

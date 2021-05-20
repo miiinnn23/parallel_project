@@ -84,7 +84,7 @@ void iter(double dt, vector<Particle>::iterator it) {
 		}
 
 		if (it->m > 19.9 && (it->age < 0.3 && it->age > 0.2)) {
-			for (int i = 0; i < 100; i++) {
+			for (int i = 0; i < 50; i++) {
 				Particle p;
 				p.m = rand() / (double)RAND_MAX * 10.0;
 
@@ -93,7 +93,7 @@ void iter(double dt, vector<Particle>::iterator it) {
 				p.x[2] = 0.0;
 
 				/*double theta = 2 * 3.14 * (double)i / (NumParticle / 2 - 1);*/
-				double theta = 2 * 3.14 * (double)i / 100 - 1;
+				double theta = 2 * 3.14 * (double)i / (50 - 1);
 				double speed = rand() / (double)RAND_MAX * 10.0f;
 				p.v[0] = speed * cos(theta);
 				p.v[1] = speed * sin(theta);
@@ -116,7 +116,6 @@ void iter(double dt, vector<Particle>::iterator it) {
 
 		it->age -= 0.1;
 
-		double remainAge = it->age - it->launchTime;
 		if (it->launchV[1] < 0.0f) {
 			it->launch = false;
 		}
@@ -155,9 +154,9 @@ void Mouse(int button, int state, int x, int y) {
 	double r = rand() / (double)RAND_MAX * 1.4;
 	double g = rand() / (double)RAND_MAX * 1.4;
 	double b = rand() / (double)RAND_MAX * 1.4;
-	double time = randParticle / (double)500.0f;
+	double time = randParticle / (double)200.0f;
 
-	double launchHeight = 5 + rand() / (double)RAND_MAX * 10.0f;
+	double launchHeight = 15 + rand() / (double)RAND_MAX * 5.0f;
 
 	for (int i = 0; i < randParticle; ++i) {
 		Particle p;

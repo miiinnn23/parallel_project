@@ -83,32 +83,36 @@ void iter(double dt, vector<Particle>::iterator it) {
 			it->v[2] = it->v[2] + dt * (downGravity[2] / it->m);
 		}
 
-		//if (it->m > 19.9 && (it->age < 0.3 && it->age > 0.2)) {
-		//	for (int i = 0; i < 100; i++) {
-		//		Particle p;
-		//		p.m = rand() / (double)RAND_MAX * 10.0;
+		if (it->m > 19.9 && (it->age < 0.3 && it->age > 0.2)) {
+			for (int i = 0; i < 100; i++) {
+				Particle p;
+				p.m = rand() / (double)RAND_MAX * 10.0;
 
-		//		p.x[0] = it->x[0];
-		//		p.x[1] = it->x[1];
-		//		p.x[2] = 0.0;
+				p.x[0] = it->x[0];
+				p.x[1] = it->x[1];
+				p.x[2] = 0.0;
 
-		//		/*double theta = 2 * 3.14 * (double)i / (NumParticle / 2 - 1);*/
-		//		double theta = 2 * 3.14 * (double)i / 100 - 1;
-		//		double speed = rand() / (double)RAND_MAX * 10.0f;
-		//		p.v[0] = speed * cos(theta);
-		//		p.v[1] = speed * sin(theta);
-		//		p.v[2] = 0.0;
+				/*double theta = 2 * 3.14 * (double)i / (NumParticle / 2 - 1);*/
+				double theta = 2 * 3.14 * (double)i / 100 - 1;
+				double speed = rand() / (double)RAND_MAX * 10.0f;
+				p.v[0] = speed * cos(theta);
+				p.v[1] = speed * sin(theta);
+				p.v[2] = 0.0;
 
-		//		p.size = rand() / (double)RAND_MAX * 3.5;
+				p.size = rand() / (double)RAND_MAX * 3.5;
 
-		//		p.age = p.m;
-		//		p.c[0] = it->c[0];
-		//		p.c[1] = it->c[1];
-		//		p.c[2] = it->c[2];
+				p.age = p.m;
+				p.c[0] = it->c[0];
+				p.c[1] = it->c[1];
+				p.c[2] = it->c[2];
 
-		//		PSystem.push_back(p);
-		//	}
-		//}
+				p.launch = false;
+				p.launchTime = 0.0f;
+				p.age = p.m + p.launchTime;
+
+				PSystem.push_back(p);
+			}
+		}
 
 		it->age -= 0.1;
 
@@ -153,12 +157,14 @@ void Mouse(int button, int state, int x, int y) {
 	double b = rand() / (double)RAND_MAX * 1.4;
 	double time = randParticle / (double)500.0f;
 
+	double launchHeight = 5 + rand() / (double)RAND_MAX * 10.0f;
+
 	for (int i = 0; i < randParticle; ++i) {
 		Particle p;
 
 		p.m = rand() / (double)RAND_MAX * 20.0;
 
-		p.x[0] = x + rand() / (double)RAND_MAX;
+		p.x[0] = x;
 		p.x[1] = Height - y;
 		p.x[2] = 0.0;
 
@@ -169,7 +175,7 @@ void Mouse(int button, int state, int x, int y) {
 		p.v[2] = 0.0;
 
 		p.launchV[0] = 0.0f;
-		p.launchV[1] = speed;
+		p.launchV[1] = launchHeight;
 		p.launchV[2] = 0.0f;
 
 		p.size = rand() / (double)RAND_MAX * 5.0;

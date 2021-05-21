@@ -3,7 +3,7 @@
 #include "..\usr\include\GL\freeglut.h"
 #include <vector>
 #include <time.h>
-#define NumParticle 100
+#define NumParticle 1000
 
 using namespace std;
 
@@ -24,7 +24,7 @@ struct Particle {
 };
 
 double downGravity[3] = { 0.0, -9.8, 0.0 };
-double upGravity[3] = { 0.0, -1, 0.0 };
+double upGravity[3] = { 0.0, -1.2, 0.0 };
 double ExtForce[3] = { 0.0, 0.0, 0.0 };
 vector<Particle> PSystem;
 
@@ -58,6 +58,7 @@ void Reshape(int w, int h) {
 }
 
 void iter(double dt, vector<Particle>::iterator it) {
+	int count = 0;
 	while (it != PSystem.end()) {
 		// 파티클의 위치 계산
 		/*it->x[0] = it->x[0] + dt * it->v[0];
@@ -72,6 +73,10 @@ void iter(double dt, vector<Particle>::iterator it) {
 			it->launchV[0] = it->launchV[0] + dt * (upGravity[0]);
 			it->launchV[1] = it->launchV[1] + dt * (upGravity[1]);
 			it->launchV[2] = it->launchV[2] + dt * (upGravity[2]);
+
+			if (it->launchV[1] < 0.0f) {
+				it->launch = false;
+			}
 		}
 		else {
 			it->x[0] = it->x[0] + dt * it->v[0];
@@ -83,42 +88,11 @@ void iter(double dt, vector<Particle>::iterator it) {
 			it->v[2] = it->v[2] + dt * (downGravity[2] / it->m);
 		}
 
-		if (it->m > 19.9 && (it->age < 0.3 && it->age > 0.2)) {
-			for (int i = 0; i < 50; i++) {
-				Particle p;
-				p.m = rand() / (double)RAND_MAX * 10.0;
-
-				p.x[0] = it->x[0];
-				p.x[1] = it->x[1];
-				p.x[2] = 0.0;
-
-				/*double theta = 2 * 3.14 * (double)i / (NumParticle / 2 - 1);*/
-				double theta = 2 * 3.14 * (double)i / (50 - 1);
-				double speed = rand() / (double)RAND_MAX * 10.0f;
-				p.v[0] = speed * cos(theta);
-				p.v[1] = speed * sin(theta);
-				p.v[2] = 0.0;
-
-				p.size = rand() / (double)RAND_MAX * 3.5;
-
-				p.age = p.m;
-				p.c[0] = it->c[0];
-				p.c[1] = it->c[1];
-				p.c[2] = it->c[2];
-
-				p.launch = false;
-				p.launchTime = 0.0f;
-				p.age = p.m + p.launchTime;
-
-				PSystem.push_back(p);
-			}
-		}
-
 		it->age -= 0.1;
 
-		if (it->launchV[1] < 0.0f) {
+		/*if (it->launchV[1] < 0.0f) {
 			it->launch = false;
-		}
+		}*/
 
 		if (it->age < 0.0) {
 			it = PSystem.erase(it);
@@ -131,7 +105,43 @@ void iter(double dt, vector<Particle>::iterator it) {
 			it = PSystem.erase(it);
 			continue;
 		}*/
-		++it;
+
+		if (it->m > 19.9 && (it->age < 0.3 && it->age > 0.2)) {
+			double x0 = it->x[0];
+			double x1 = it->x[1];
+
+			double c[3] = { it->c[0], it->c[1], it->c[2] };
+			for (int i = 0; i < 500; i++) {
+				Particle p;
+				p.m = rand() / (double)RAND_MAX * 10.0;
+
+				p.x[0] = x0;
+				p.x[1] = x1;
+				p.x[2] = 0.0;
+
+				double theta = 2 * 3.14 * (double)i / (500 - 1);
+				double speed = rand() / (double)RAND_MAX * 10.0f;
+				p.v[0] = speed * cos(theta);
+				p.v[1] = speed * sin(theta);
+				p.v[2] = 0.0;
+
+				p.size = rand() / (double)RAND_MAX * 3.5;
+
+				p.age = p.m;
+				p.c[0] = c[0];
+				p.c[1] = c[1];
+				p.c[2] = c[2];
+
+				p.launch = false;
+				p.launchTime = 0.0f;
+				p.age = p.m + p.launchTime;
+
+				PSystem.push_back(p);
+			}
+		}
+		count++;
+		it = PSystem.begin() + count;
+		//++it;
 	}
 }
 
@@ -149,14 +159,14 @@ void Timer(int id) {
 }
 
 void Mouse(int button, int state, int x, int y) {
-	int randParticle = int(rand() * 20 / (double)RAND_MAX * NumParticle); // 20 <= randParticle <= 2000
+	int randParticle = 700 + int(rand() / (double)RAND_MAX * NumParticle); // 700 < randParticle < 1700
 
-	double r = rand() / (double)RAND_MAX * 1.4;
-	double g = rand() / (double)RAND_MAX * 1.4;
-	double b = rand() / (double)RAND_MAX * 1.4;
-	double time = randParticle / (double)200.0f;
+	double r = 0.5 + rand() / ((double)RAND_MAX * 2); // 밝은 색을 내기 위하여 색 값은 0.5 ~ 1.0 사이로 설정
+	double g = 0.5 + rand() / ((double)RAND_MAX * 2);
+	double b = 0.5 + rand() / ((double)RAND_MAX * 2);
+	double time = randParticle / (double)100.0f;	// 수명은 생성되는 파티클 수에 비례
 
-	double launchHeight = 15 + rand() / (double)RAND_MAX * 5.0f;
+	double launchSpeed = 15 + (double)randParticle / 200;	// 발사 속도 역시 생성되는 파티클 수에 비례
 
 	for (int i = 0; i < randParticle; ++i) {
 		Particle p;
@@ -174,7 +184,7 @@ void Mouse(int button, int state, int x, int y) {
 		p.v[2] = 0.0;
 
 		p.launchV[0] = 0.0f;
-		p.launchV[1] = launchHeight;
+		p.launchV[1] = launchSpeed;
 		p.launchV[2] = 0.0f;
 
 		p.size = rand() / (double)RAND_MAX * 5.0;
@@ -185,8 +195,7 @@ void Mouse(int button, int state, int x, int y) {
 
 		p.launch = true;
 		p.launchTime = time;
-		//p.age = p.m * 0.8 + p.launchTime;
-		p.age = p.m + p.launchTime;
+		p.age = p.m + p.launchTime * 1.2;
 
 		PSystem.push_back(p);
 	}

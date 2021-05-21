@@ -61,10 +61,6 @@ void iter(double dt, vector<Particle>::iterator it) {
 	int count = 0;
 	while (it != PSystem.end()) {
 		// 파티클의 위치 계산
-		/*it->x[0] = it->x[0] + dt * it->v[0];
-		it->x[1] = it->x[1] + dt * it->v[1];
-		it->x[2] = it->x[2] + dt * it->v[2];*/
-
 		if (it->launch) {
 			it->x[0] = it->x[0] + dt * it->launchV[0];
 			it->x[1] = it->x[1] + dt * it->launchV[1];
@@ -90,25 +86,15 @@ void iter(double dt, vector<Particle>::iterator it) {
 
 		it->age -= 0.1;
 
-		/*if (it->launchV[1] < 0.0f) {
-			it->launch = false;
-		}*/
-
 		if (it->age < 0.0) {
 			it = PSystem.erase(it);
 			continue;
 		}
-		/*if (it->x[1] < 0.0) {
-			it->v[1] *= -1;
-		}*/
-		/*if (it->x[1] < 0.0) {
-			it = PSystem.erase(it);
-			continue;
-		}*/
 
 		if (it->m > 19.9 && (it->age < 0.3 && it->age > 0.2)) {
 			double x0 = it->x[0];
 			double x1 = it->x[1];
+
 
 			double c[3] = { it->c[0], it->c[1], it->c[2] };
 			for (int i = 0; i < 500; i++) {

@@ -1,0 +1,24 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Windows>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "\\pub.mme.dongguk.edu\home\s2019112543\Desktop\CudaRuntime2\CudaRuntime2\kernel.cu" 
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/transform.inl(136): error : class "thrust::iterator_system<thrust::device_reference<Particle>>" has no member "type"
+            detected during instantiation of "OutputIterator thrust::transform(InputIterator, InputIterator, OutputIterator, UnaryFunction) [with InputIterator=thrust::device_reference<Particle>, OutputIterator=thrust::device_reference<Particle>, UnaryFunction=changeValue]" 
+  \pub.mme.dongguk.edu/home/s2019112543/Desktop/CudaRuntime2/CudaRuntime2/kernel.cu(83): here
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/transform.inl(137): error : class "thrust::iterator_system<thrust::device_reference<Particle>>" has no member "type"
+            detected during instantiation of "OutputIterator thrust::transform(InputIterator, InputIterator, OutputIterator, UnaryFunction) [with InputIterator=thrust::device_reference<Particle>, OutputIterator=thrust::device_reference<Particle>, UnaryFunction=changeValue]" 
+  \pub.mme.dongguk.edu/home/s2019112543/Desktop/CudaRuntime2/CudaRuntime2/kernel.cu(83): here
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/transform.inl(142): error : no instance of overloaded function "select_system" matches the argument list
+              argument types are: (System1, System2)
+            detected during instantiation of "OutputIterator thrust::transform(InputIterator, InputIterator, OutputIterator, UnaryFunction) [with InputIterator=thrust::device_reference<Particle>, OutputIterator=thrust::device_reference<Particle>, UnaryFunction=changeValue]" 
+  \pub.mme.dongguk.edu/home/s2019112543/Desktop/CudaRuntime2/CudaRuntime2/kernel.cu(83): here
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/detail/transform.inl(142): error : no instance of overloaded function "thrust::transform" matches the argument list
+              argument types are: (<error-type>, thrust::device_reference<Particle>, thrust::device_reference<Particle>, thrust::device_reference<Particle>, changeValue)
+            detected during instantiation of "OutputIterator thrust::transform(InputIterator, InputIterator, OutputIterator, UnaryFunction) [with InputIterator=thrust::device_reference<Particle>, OutputIterator=thrust::device_reference<Particle>, UnaryFunction=changeValue]" 
+  \pub.mme.dongguk.edu/home/s2019112543/Desktop/CudaRuntime2/CudaRuntime2/kernel.cu(83): here
+  
+  4 errors detected in the compilation of "\\pub.mme.dongguk.edu/home/s2019112543/Desktop/CudaRuntime2/CudaRuntime2/kernel.cu".
+  kernel.cu
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 11.2.targets(785,9): error MSB3721: ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "\\pub.mme.dongguk.edu\home\s2019112543\Desktop\CudaRuntime2\CudaRuntime2\kernel.cu"" 명령이 종료되었습니다(코드: 1).

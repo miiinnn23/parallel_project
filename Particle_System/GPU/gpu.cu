@@ -66,21 +66,8 @@ void Reshape(int w, int h) {
 __global__ void myKernel(Particle* ptr, double dt, int width) {
 	int i = blockIdx.y * TILE_WIDTH + threadIdx.y;
 	int j = blockIdx.x * TILE_WIDTH + threadIdx.x;
-	//int i = blockDim.x * blockIdx.x + threadIdx.x;
 
-	//if (i < width) {
-	//	ptr[i].x[0] = ptr[i].x[0] + dt * ptr[i].v[0];
-	//	ptr[i].x[1] = ptr[i].x[1] + dt * ptr[i].v[1];
-	//	ptr[i].x[2] = ptr[i].x[2] + dt * ptr[i].v[2];
-
-	//	ptr[i].v[1] = ptr[i].v[1] + dt * (-9.8 / ptr[i].m);
-	//	ptr[i].age -= 0.1;
-	//	//if(i == 0) printf("ptr[%d].age = %f\n", i, ptr[i].age);
-	//}
 	if (i < width && j < width) {
-		/*if (i == 0 && j == 0) {
-			printf("ptr[%d].age = %f\n", i * width + j, ptr[i * width + j].age);
-		}*/
 		ptr[i * width + j].x[0] = ptr[i * width + j].x[0] + dt * ptr[i * width + j].v[0];
 		ptr[i * width + j].x[1] = ptr[i * width + j].x[1] + dt * ptr[i * width + j].v[1];
 		ptr[i * width + j].x[2] = ptr[i * width + j].x[2] + dt * ptr[i * width + j].v[2];
@@ -96,13 +83,10 @@ void iter(double dt, vector<Particle>::iterator it) {
 	thrust::device_vector<Particle> DSystem = PSystem;
 
 	if (!PSystem.empty()) {
-		dim3 dimGrid((PSystem.size() - 1) / TILE_WIDTH + 1, (PSystem.size() - 1) / TILE_WIDTH + 1);
-		dim3 dimBlock(TILE_WIDTH, TILE_WIDTH);
-
+		int size = PSystem.size();
 		Particle* raw_ptr = thrust::raw_pointer_cast(&DSystem[0]);
 
-		//myKernel << <1, PSystem.size() >> > (raw_ptr, dt, PSystem.size());
-		myKernel << <dimGrid, dimBlock>> > (raw_ptr, dt, PSystem.size());
+		myKernel << <((size - 1) / TILE_WIDTH + 1, (size - 1) / TILE_WIDTH + 1), (TILE_WIDTH, TILE_WIDTH) >> > (raw_ptr, dt, PSystem.size());
 
 		thrust::copy(DSystem.begin(), DSystem.end(), PSystem.begin());
 	}
@@ -148,7 +132,7 @@ void Mouse(int button, int state, int x, int y) {
 		p.x[1] = Height - y;
 		p.x[2] = 0.0;
 
-		double theta = 2 * 3.14 * (double)i / (randParticle - 1);
+		double theta = 2 * 3.14 * (double)i / (NumParticle - 1);
 		double speed = rand() / (double)RAND_MAX * 10.0f;
 		p.v[0] = speed * cos(theta);
 		p.v[1] = speed * sin(theta);

@@ -35,7 +35,6 @@ struct Particle {
 double downGravity[3] = { 0.0, -9.8, 0.0 };
 double upGravity[3] = { 0.0, -1.2, 0.0 };
 
-double ExtForce[3] = { 0.0, 0.0, 0.0 };
 vector<Particle> PSystem;
 
 void Render();
@@ -53,7 +52,7 @@ int main(int argc, char** argv) {
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 
 	glutInitWindowSize(Width, Height);
-	glutCreateWindow("Particle System");
+	glutCreateWindow("Firework System GPU");
 
 	glutDisplayFunc(Render);
 	glutReshapeFunc(Reshape);
@@ -98,7 +97,6 @@ __global__ void myKernel(Particle* ptr, double dt, int width, thrust::device_vec
 }
 
 void iter(double dt, vector<Particle>::iterator it) {
-	int count = 0;
 	thrust::device_vector<Particle> DSystem = PSystem;
 
 	if (!PSystem.empty()) {
@@ -111,9 +109,45 @@ void iter(double dt, vector<Particle>::iterator it) {
 	}
 
 	while (it != PSystem.end()) {
+		int count = 0;
+
 		if (it->age < 0.0) {
 			it = PSystem.erase(it);
 			continue;
+		}
+
+		if (it->m > 19.9 && (it->age < 0.3 && it->age > 0.2)) {
+			double x0 = it->x[0];
+			double x1 = it->x[1];
+
+			double c[3] = { it->c[0], it->c[1], it->c[2] };
+			for (int i = 0; i < 500; i++) {
+				Particle p;
+				p.m = rand() / (double)RAND_MAX * 10.0;
+
+				p.x[0] = x0;
+				p.x[1] = x1;
+				p.x[2] = 0.0;
+
+				double theta = 2 * 3.14 * (double)i / (500 - 1);
+				double speed = rand() / (double)RAND_MAX * 10.0f;
+				p.v[0] = speed * cos(theta);
+				p.v[1] = speed * sin(theta);
+				p.v[2] = 0.0;
+
+				p.size = rand() / (double)RAND_MAX * 3.5;
+
+				p.age = p.m;
+				p.c[0] = c[0];
+				p.c[1] = c[1];
+				p.c[2] = c[2];
+
+				p.launch = false;
+				p.launchTime = 0.0f;
+				p.age = p.m + p.launchTime;
+
+				PSystem.push_back(p);
+			}
 		}
 
 		count++;
@@ -207,15 +241,4 @@ void Render() {
 
 void Keyboard(unsigned char key, int x, int y) {
 	if (key == 27) exit(1);
-
-	if (key == '1') {
-		ExtForce[0] = 100.0;
-		ExtForce[1] = 0.0;
-		ExtForce[2] = 0.0;
-	}
-	if (key == '2') {
-		ExtForce[0] = -100.0;
-		ExtForce[1] = 0.0;
-		ExtForce[2] = 0.0;
-	}
 }

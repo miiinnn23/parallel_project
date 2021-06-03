@@ -35,7 +35,11 @@ struct Particle {
 double downGravity[3] = { 0.0, -9.8, 0.0 };
 double upGravity[3] = { 0.0, -1.2, 0.0 };
 
+double ExtForce[3] = { 0.0, 0.0, 0.0 };
 vector<Particle> PSystem;
+
+int mouseCount = 0;
+long timeMax = 0;
 
 void Render();
 void Reshape(int w, int h);
@@ -46,6 +50,7 @@ void Timer(int id);
 void iter(double dt, vector<Particle>::iterator it);
 
 __global__ void myKernel(Particle* ptr, double dt, int width, thrust::device_vector<Particle> DSystem);
+//__global__ void beforePushBackKernel(Particle* ptr, double )
 
 int main(int argc, char** argv) {
 	glutInit(&argc, argv);
@@ -96,7 +101,12 @@ __global__ void myKernel(Particle* ptr, double dt, int width, thrust::device_vec
 	}
 }
 
+__global__ void beforePushBackKernel(Particle* ptr, double) {
+
+}
+
 void iter(double dt, vector<Particle>::iterator it) {
+	int count = 0;
 	thrust::device_vector<Particle> DSystem = PSystem;
 
 	if (!PSystem.empty()) {
@@ -109,18 +119,17 @@ void iter(double dt, vector<Particle>::iterator it) {
 	}
 
 	while (it != PSystem.end()) {
-		int count = 0;
-
 		if (it->age < 0.0) {
 			it = PSystem.erase(it);
 			continue;
 		}
-
 		if (it->m > 19.9 && (it->age < 0.3 && it->age > 0.2)) {
 			double x0 = it->x[0];
 			double x1 = it->x[1];
 
+
 			double c[3] = { it->c[0], it->c[1], it->c[2] };
+
 			for (int i = 0; i < 500; i++) {
 				Particle p;
 				p.m = rand() / (double)RAND_MAX * 10.0;
@@ -145,11 +154,15 @@ void iter(double dt, vector<Particle>::iterator it) {
 				p.launch = false;
 				p.launchTime = 0.0f;
 				p.age = p.m + p.launchTime;
+				/*Particle* ptr, dPtr;
+				cudaMalloc((Particle**)&dPtr, sizeof(Particle) * 500);
+				cudaMemcpy(dPtr, ptr, sizeof(Particle) * 500, cudaMemcpyHostToDevice);
+				beforePushBackKernel << < >> > (Particle * ptr, double);*/
 
 				PSystem.push_back(p);
 			}
-		}
 
+		}
 		count++;
 		it = PSystem.begin() + count;
 	}
@@ -157,20 +170,31 @@ void iter(double dt, vector<Particle>::iterator it) {
 
 void Timer(int id) {
 	clock_t st = clock();
-	double dt = 0.1;
 
+	double dt = 0.1;
 	//thrust::device_vector<Particle> DSystem = PSystem;
 	vector<Particle>::iterator it = PSystem.begin();
-
 	iter(dt, it);
 
 	glutPostRedisplay();
-	//printf("particle count = %d\n", PSystem.size());
-	//printf("Elapsed time = %u ms\n", clock() - st);
+
+	long time = clock() - st;
+	//timeMax = (time > timeMax) ? time : timeMax;
+	if (mouseCount != 1) {
+		timeMax = (time > timeMax) ? time : timeMax;
+	}
+
+	//printf("clicked %d times : Elapsed time = %u ms\n", mouseCount, time);
+	if (mouseCount != 0 && PSystem.empty()) {
+		printf("clicked %d times : max time = %u ms\n", mouseCount, timeMax);
+		timeMax = 0;
+		mouseCount = 0;
+	}
 	glutTimerFunc(10, Timer, 0);
 }
 
 void Mouse(int button, int state, int x, int y) {
+	mouseCount++;
 	int randParticle = 700 + int(rand() / (double)RAND_MAX * NumParticle); // 700 < randParticle < 1700
 
 	double r = 0.5 + rand() / ((double)RAND_MAX * 2); // 밝은 색을 내기 위하여 색 값은 0.5 ~ 1.0 사이로 설정
@@ -241,4 +265,15 @@ void Render() {
 
 void Keyboard(unsigned char key, int x, int y) {
 	if (key == 27) exit(1);
+
+	if (key == '1') {
+		ExtForce[0] = 100.0;
+		ExtForce[1] = 0.0;
+		ExtForce[2] = 0.0;
+	}
+	if (key == '2') {
+		ExtForce[0] = -100.0;
+		ExtForce[1] = 0.0;
+		ExtForce[2] = 0.0;
+	}
 }

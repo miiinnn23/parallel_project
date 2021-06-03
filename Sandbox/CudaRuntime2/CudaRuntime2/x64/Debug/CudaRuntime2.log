@@ -1,0 +1,21 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\s2019112543\source\repos\CudaRuntime2\CudaRuntime2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\s2019112543\source\repos\CudaRuntime2\CudaRuntime2\kernel.cu" 
+C:/Users/s2019112543/source/repos/CudaRuntime2/CudaRuntime2/kernel.cu(113): warning : expression has no effect
+  
+C:/Users/s2019112543/source/repos/CudaRuntime2/CudaRuntime2/kernel.cu(113): warning : expression has no effect
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/system/cuda/detail/assign_value.h(83): warning : calling a __host__ function("std::_Iterator_base12::_Iterator_base12") from a __host__ __device__ function("std::_Iterator_base12::_Iterator_base12 [subobject]") is not allowed
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include\thrust/system/cuda/detail/assign_value.h(83): warning : calling a __host__ function("std::_Iterator_base12::~_Iterator_base12") from a __host__ __device__ function("std::_Iterator_base12::~_Iterator_base12 [subobject]") is not allowed
+  
+C:/Users/s2019112543/source/repos/CudaRuntime2/CudaRuntime2/kernel.cu(113): warning : expression has no effect
+  
+C:/Users/s2019112543/source/repos/CudaRuntime2/CudaRuntime2/kernel.cu(113): warning : expression has no effect
+  
+  kernel.cu
+C:/Users/s2019112543/source/repos/CudaRuntime2/CudaRuntime2/kernel.cu(110): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:/Users/s2019112543/source/repos/CudaRuntime2/CudaRuntime2/kernel.cu(113): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:/Users/s2019112543/source/repos/CudaRuntime2/CudaRuntime2/kernel.cu(242): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     C:\Users\s2019112543\source\repos\CudaRuntime2\x64\Debug\CudaRuntime2.lib 라이브러리 및 C:\Users\s2019112543\source\repos\CudaRuntime2\x64\Debug\CudaRuntime2.exp 개체를 생성하고 있습니다.
+  CudaRuntime2.vcxproj -> C:\Users\s2019112543\source\repos\CudaRuntime2\x64\Debug\CudaRuntime2.exe

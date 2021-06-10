@@ -1,6 +1,7 @@
 ﻿
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
+#include "curand_kernel.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -34,6 +35,8 @@ struct Particle {
 	double c[3];	// 색상
 	double age;		// 나이
 
+	double hist[15][3];	// 불꽃놀이 자취 형성
+
 	bool launch;		// 발사 여부
 	double launchTime;	// 발사 시간
 	double launchV[3];	// 발사 시간 동안의 속도
@@ -42,11 +45,11 @@ struct Particle {
 int mouseCount = 0;
 long timeMax = 0;
 
-double downGravity[3] = { 0.0, -9.8, 0.0 };
-double upGravity[3] = { 0.0, -1.2, 0.0 };
-
-double ExtForce[3] = { 0.0, 0.0, 0.0 };
+//double downGravity[3] = { 0.0, -9.8, 0.0 };
+//double upGravity[3] = { 0.0, -1.2, 0.0 };
+//double ExtForce[3] = { 0.0, 0.0, 0.0 };
 vector<Particle> PSystem;
+
 
 void Render();
 void Reshape(int w, int h);
@@ -57,8 +60,10 @@ void Close();
 
 void iter(double dt, vector<Particle>::iterator it);
 
-__global__ void myKernel(Particle* ptr, double dt, int width, thrust::device_vector<Particle> DSystem);
-//__global__ void beforePushBackKernel(Particle* ptr, double )
+//__device__ int getRand(curandState* s, int A, int B);
+__global__ void myKernel(Particle* ptr, double dt, int width);
+//__global__ void beforePushBackKernel(Particle* ptr, double a);
+//__global__ void createParticle(int randParticle, Particle* firstPtr, double r, double g, double b, double time, double launchSpeed, int x, int y);
 
 int main(int argc, char** argv) {
 	glutInit(&argc, argv);
@@ -71,7 +76,7 @@ int main(int argc, char** argv) {
 	glutReshapeFunc(Reshape);
 	glutMouseFunc(Mouse);
 	glutKeyboardFunc(Keyboard);
-	glutTimerFunc(10, Timer, 0);
+	glutTimerFunc(1, Timer, 0);
 	glutCloseFunc(Close);
 
 	glewInit();
@@ -106,7 +111,12 @@ void Close() {
 	glBindBuffer(GL_PIXEL_UNPACK_BUFFER_ARB, 0);
 	glDeleteBuffers(1, &gl_pbo);
 }
-__global__ void myKernel(Particle* ptr, double dt, int width, thrust::device_vector<Particle> DSystem) {
+
+//__global__ void childKernel(Particle* ptr, int i, int j, int width) {
+//	ptr[i * width + j].hist[blockIdx][threadIdx] = ptr[i * width + j].x[threadIdx];
+//}
+
+__global__ void myKernel(Particle* ptr, double dt, int width) {
 	int i = blockIdx.y * TILE_WIDTH + threadIdx.y;
 	int j = blockIdx.x * TILE_WIDTH + threadIdx.x;
 
@@ -118,11 +128,30 @@ __global__ void myKernel(Particle* ptr, double dt, int width, thrust::device_vec
 
 			ptr[i * width + j].launchV[1] = ptr[i * width + j].launchV[1] + dt * (-1.2);
 
+			/*childKernel << <15, 3 >> > (ptr, i, j, width);
+			cudaDeviceSynchronize();
+			__syncthreads();*/
+			for (int m = 0; m < 15; m++) {
+				for (int k = 0; k < 3; k++) {
+					ptr[i * width + j].hist[m][k] = ptr[i * width + j].x[k];
+				}
+			}
+			
+
 			if (ptr[i * width + j].launchV[1] < 0.0f) {
 				ptr[i * width + j].launch = false;
 			}
 		}
 		else {
+			for (int m = 14; m > 0; m--) {
+				for (int k = 0; k < 3; k++) {
+					ptr[i * width + j].hist[m][k] = ptr[i * width + j].hist[m - 1][k];
+				}
+			}
+			for (int k = 0; k < 3; k++) {
+				ptr[i * width + j].hist[0][k] = ptr[i * width + j].x[k];
+			}
+
 			ptr[i * width + j].x[0] = ptr[i * width + j].x[0] + dt * ptr[i * width + j].v[0];
 			ptr[i * width + j].x[1] = ptr[i * width + j].x[1] + dt * ptr[i * width + j].v[1];
 			ptr[i * width + j].x[2] = ptr[i * width + j].x[2] + dt * ptr[i * width + j].v[2];
@@ -134,19 +163,18 @@ __global__ void myKernel(Particle* ptr, double dt, int width, thrust::device_vec
 	}
 }
 
-__global__ void beforePushBackKernel(Particle* ptr, double) {
-
-}
 
 void iter(double dt, vector<Particle>::iterator it) {
+
 	int count = 0;
 	thrust::device_vector<Particle> DSystem = PSystem;
+
+	
 
 	if (!PSystem.empty()) {
 		int size = PSystem.size();
 		Particle* raw_ptr = thrust::raw_pointer_cast(&DSystem[0]);
-
-		myKernel << <((size - 1) / TILE_WIDTH + 1, (size - 1) / TILE_WIDTH + 1), (TILE_WIDTH, TILE_WIDTH) >> > (raw_ptr, dt, PSystem.size(), DSystem);
+		myKernel << <((size - 1) / TILE_WIDTH + 1, (size - 1) / TILE_WIDTH + 1), (TILE_WIDTH, TILE_WIDTH) >> > (raw_ptr, dt, PSystem.size());
 
 		thrust::copy(DSystem.begin(), DSystem.end(), PSystem.begin());
 	}
@@ -171,6 +199,12 @@ void iter(double dt, vector<Particle>::iterator it) {
 				p.x[1] = x1;
 				p.x[2] = 0.0;
 
+				for (int j = 0; j < 15; j++) {
+					for (int k = 0; k < 3; k++) {
+						p.hist[j][k] = p.x[k];
+					}
+				}
+
 				double theta = 2 * 3.14 * (double)i / (500 - 1);
 				double speed = rand() / (double)RAND_MAX * 10.0f;
 				p.v[0] = speed * cos(theta);
@@ -187,10 +221,6 @@ void iter(double dt, vector<Particle>::iterator it) {
 				p.launch = false;
 				p.launchTime = 0.0f;
 				p.age = p.m + p.launchTime;
-			/*Particle* ptr, dPtr;
-			cudaMalloc((Particle**)&dPtr, sizeof(Particle) * 500);
-			cudaMemcpy(dPtr, ptr, sizeof(Particle) * 500, cudaMemcpyHostToDevice);
-			beforePushBackKernel << < >> > (Particle * ptr, double);*/
 
 				PSystem.push_back(p);
 			}
@@ -205,7 +235,6 @@ void Timer(int id) {
 	clock_t st = clock();
 	double dt = 0.1;
 
-	//thrust::device_vector<Particle> DSystem = PSystem;
 	vector<Particle>::iterator it = PSystem.begin();
 
 	iter(dt, it);
@@ -213,21 +242,56 @@ void Timer(int id) {
 	glutPostRedisplay();
 
 	long time = clock() - st;
-	//timeMax = (time > timeMax) ? time : timeMax;
 	if (mouseCount != 1) {
 		timeMax = (time > timeMax) ? time : timeMax;
 	}
 
-	//printf("clicked %d times : Elapsed time = %u ms\n", mouseCount, time);
 	if (mouseCount != 0 && PSystem.empty()) {
 		printf("clicked %d times : max time = %u ms\n", mouseCount, timeMax);
 		timeMax = 0;
 		mouseCount = 0;
 	}
-	//printf("particle count = %d\n", PSystem.size());
-	//printf("Elapsed time = %u ms\n", clock() - st);
-	glutTimerFunc(10, Timer, 0);
+	glutTimerFunc(1, Timer, 0);
 }
+
+//__global__ void createParticle(int randParticle, Particle* firstPtr, double r, double g, double b, double time, double launchSpeed, int x, int y) {
+//	int Height = 600;
+//	int i = blockIdx.y * TILE_WIDTH + threadIdx.y;
+//	int j = blockIdx.x * TILE_WIDTH + threadIdx.x;
+//
+//	int id = threadIdx.x + blockDim.x * blockIdx.x;
+//	unsigned int seed = id;
+//	curandState s;
+//	curand_init(seed, 0, 0, &s);
+//
+//	double random_max = 32767;
+//	int randNum = getRand(&s, 0, (int)random_max); // 0~9 까지 난수 생성
+//	
+//	firstPtr[i * TILE_WIDTH + j].x[0] = x;
+//	firstPtr[i * TILE_WIDTH + j].x[1] = Height - y;
+//	firstPtr[i * TILE_WIDTH + j].x[2] = 0.0;
+//
+//	double theta = 2 * 3.14 * (double)(i*TILE_WIDTH + j) / (randParticle - 1);
+//	double speed = randNum / random_max * 10.0f;
+//	firstPtr[i * TILE_WIDTH + j].v[0] = speed * cos(theta);
+//	firstPtr[i * TILE_WIDTH + j].v[1] = speed * sin(theta);
+//	firstPtr[i * TILE_WIDTH + j].v[2] = 0.0;
+//
+//	firstPtr[i * TILE_WIDTH + j].launchV[0] = 0.0f;
+//	firstPtr[i * TILE_WIDTH + j].launchV[1] = launchSpeed;
+//	firstPtr[i * TILE_WIDTH + j].launchV[2] = 0.0f;
+//
+//	firstPtr[i * TILE_WIDTH + j].size = randNum / random_max * 5.0;
+//
+//	firstPtr[i * TILE_WIDTH + j].c[0] = r;
+//	firstPtr[i * TILE_WIDTH + j].c[1] = g;
+//	firstPtr[i * TILE_WIDTH + j].c[2] = b;
+//
+//	firstPtr[i * TILE_WIDTH + j].launch = true;
+//	firstPtr[i * TILE_WIDTH + j].launchTime = time;
+//	firstPtr[i * TILE_WIDTH + j].age = firstPtr[i * TILE_WIDTH + j].m + firstPtr[i * TILE_WIDTH + j].launchTime * 1.2;
+//}
+
 
 void Mouse(int button, int state, int x, int y) {
 	mouseCount++;
@@ -240,6 +304,7 @@ void Mouse(int button, int state, int x, int y) {
 
 	double launchSpeed = 15 + (double)randParticle / 200;	// 발사 속도 역시 생성되는 파티클 수에 비례
 
+
 	for (int i = 0; i < randParticle; ++i) {
 		Particle p;
 
@@ -248,6 +313,12 @@ void Mouse(int button, int state, int x, int y) {
 		p.x[0] = x;
 		p.x[1] = Height - y;
 		p.x[2] = 0.0;
+
+		for (int j = 0; j < 15; j++) {
+			for (int k = 0; k < 3; k++) {
+				p.hist[j][k] = p.x[k];
+			}
+		}
 
 		double theta = 2 * 3.14 * (double)i / (randParticle - 1);
 		double speed = rand() / (double)RAND_MAX * 10.0f;
@@ -294,11 +365,16 @@ void Render() {
 	size_t size;
 	cudaGraphicsMapResources(1, &cuda_pbo, NULL);
 	cudaGraphicsResourceGetMappedPointer((void**)&pDevImage, &size, cuda_pbo);
-
-	// Julia 집합 찾아 픽셀 버퍼를 채운다.
-	//CreateJuliaSet();
 	
 	for (int i = 0; i < PSystem.size(); ++i) {
+		glLineWidth(PSystem[i].size);
+		glBegin(GL_LINE_STRIP);
+		//glColor3d(PSystem[i].c[0] * 0.8, PSystem[i].c[1] * 0.8, PSystem[i].c[2] * 0.8);
+		for (int j = 14; j > 0; j--) {
+			glVertex3dv(PSystem[i].hist[j]);
+		}
+		glEnd();
+
 		glPointSize(PSystem[i].size);
 		glBegin(GL_POINTS);
 		glColor3dv(PSystem[i].c);
@@ -317,15 +393,4 @@ void Render() {
 
 void Keyboard(unsigned char key, int x, int y) {
 	if (key == 27) exit(1);
-
-	if (key == '1') {
-		ExtForce[0] = 100.0;
-		ExtForce[1] = 0.0;
-		ExtForce[2] = 0.0;
-	}
-	if (key == '2') {
-		ExtForce[0] = -100.0;
-		ExtForce[1] = 0.0;
-		ExtForce[2] = 0.0;
-	}
 }

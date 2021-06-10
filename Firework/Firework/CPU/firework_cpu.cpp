@@ -18,6 +18,8 @@ struct Particle {
 	double c[3];	// 색상
 	double age;		// 나이
 
+	double hist[15][3];	// 불꽃놀이 자취 형성
+
 	bool launch;		// 발사 여부
 	double launchTime;	// 발사 시간
 	double launchV[3];	// 발사 시간 동안의 속도
@@ -27,7 +29,6 @@ double downGravity[3] = { 0.0, -9.8, 0.0 };
 double upGravity[3] = { 0.0, -1.2, 0.0 };
 double ExtForce[3] = { 0.0, 0.0, 0.0 };
 vector<Particle> PSystem;
-
 
 int mouseCount = 0;
 
@@ -64,6 +65,7 @@ void iter(double dt, vector<Particle>::iterator it) {
 	int count = 0;
 	while (it != PSystem.end()) {
 		// 파티클의 위치 계산
+
 		if (it->launch) {
 			it->x[0] = it->x[0] + dt * it->launchV[0];
 			it->x[1] = it->x[1] + dt * it->launchV[1];
@@ -73,11 +75,26 @@ void iter(double dt, vector<Particle>::iterator it) {
 			it->launchV[1] = it->launchV[1] + dt * (upGravity[1]);
 			it->launchV[2] = it->launchV[2] + dt * (upGravity[2]);
 
+			for (int j = 0; j < 15; j++) {
+				for (int k = 0; k < 3; k++) {
+					it->hist[j][k] = it->x[k];
+				}
+			}
+
 			if (it->launchV[1] < 0.0f) {
 				it->launch = false;
 			}
 		}
 		else {
+			for (int j = 14; j > 0; j--) {
+				for (int k = 0; k < 3; k++) {
+					it->hist[j][k] = it->hist[j - 1][k];
+				}
+			}
+			for (int k = 0; k < 3; k++) {
+				it->hist[0][k] = it->x[k];
+			}
+
 			it->x[0] = it->x[0] + dt * it->v[0];
 			it->x[1] = it->x[1] + dt * it->v[1];
 			it->x[2] = it->x[2] + dt * it->v[2];
@@ -106,6 +123,12 @@ void iter(double dt, vector<Particle>::iterator it) {
 				p.x[0] = x0;
 				p.x[1] = x1;
 				p.x[2] = 0.0;
+
+				for (int j = 0; j < 15; j++) {
+					for (int k = 0; k < 3; k++) {
+						p.hist[j][k] = p.x[k];
+					}
+				}
 
 				double theta = 2 * 3.14 * (double)i / (500 - 1);
 				double speed = rand() / (double)RAND_MAX * 10.0f;
@@ -176,6 +199,12 @@ void Mouse(int button, int state, int x, int y) {
 		p.x[1] = Height - y;
 		p.x[2] = 0.0;
 
+		for (int j = 0; j < 15; j++) {
+			for (int k = 0; k < 3; k++) {
+				p.hist[j][k] = p.x[k];
+			}
+		}
+
 		double theta = 2 * 3.14 * (double)i / (randParticle - 1);
 		double speed = rand() / (double)RAND_MAX * 10.0f;
 		p.v[0] = speed * cos(theta);
@@ -216,6 +245,14 @@ void Render() {
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 	for (int i = 0; i < PSystem.size(); ++i) {
+		glLineWidth(PSystem[i].size);
+		glBegin(GL_LINE_STRIP);
+		//glColor3d(PSystem[i].c[0] * 0.8, PSystem[i].c[1] * 0.8, PSystem[i].c[2] * 0.8);
+		for (int j = 14; j > 0; j--) {
+			glVertex3dv(PSystem[i].hist[j]);
+		}
+		glEnd();
+
 		glPointSize(PSystem[i].size);
 		glBegin(GL_POINTS);
 		glColor3dv(PSystem[i].c);

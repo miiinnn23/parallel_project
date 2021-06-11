@@ -79,7 +79,7 @@ void iter(double dt, vector<Particle>::iterator it) {
 				}
 			}
 
-			if (it->launchV[1] < 0.0f) {	// 발사 종료
+			if (it->launchV[1] < 0.0f) {	// 발사 종료 조건
 				it->launch = false;
 			}
 		}

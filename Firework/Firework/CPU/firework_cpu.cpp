@@ -66,27 +66,25 @@ void iter(double dt, vector<Particle>::iterator it) {
 	while (it != PSystem.end()) {
 		// 파티클의 위치 계산
 
-		if (it->launch) {
+		if (it->launch) {	// 발사되는 동안의 위치 & 속도벡터 계산
 			it->x[0] = it->x[0] + dt * it->launchV[0];
 			it->x[1] = it->x[1] + dt * it->launchV[1];
 			it->x[2] = it->x[2] + dt * it->launchV[2];
 
-			it->launchV[0] = it->launchV[0] + dt * (upGravity[0]);
-			it->launchV[1] = it->launchV[1] + dt * (upGravity[1]);
-			it->launchV[2] = it->launchV[2] + dt * (upGravity[2]);
+			it->launchV[1] = it->launchV[1] + dt * (-1.2);
 
-			for (int j = 0; j < 15; j++) {
+			for (int j = 0; j < 15; j++) {	// 자취 저장
 				for (int k = 0; k < 3; k++) {
 					it->hist[j][k] = it->x[k];
 				}
 			}
 
-			if (it->launchV[1] < 0.0f) {
+			if (it->launchV[1] < 0.0f) {	// 발사 종료
 				it->launch = false;
 			}
 		}
-		else {
-			for (int j = 14; j > 0; j--) {
+		else {	// 폭발하는 동안의 위치 & 속도벡터 계산
+			for (int j = 14; j > 0; j--) {	// 자취 저장
 				for (int k = 0; k < 3; k++) {
 					it->hist[j][k] = it->hist[j - 1][k];
 				}
@@ -99,19 +97,17 @@ void iter(double dt, vector<Particle>::iterator it) {
 			it->x[1] = it->x[1] + dt * it->v[1];
 			it->x[2] = it->x[2] + dt * it->v[2];
 
-			it->v[0] = it->v[0] + dt * (downGravity[0] / it->m);
-			it->v[1] = it->v[1] + dt * (downGravity[1] / it->m);
-			it->v[2] = it->v[2] + dt * (downGravity[2] / it->m);
+			it->v[1] = it->v[1] + dt * (-9.8 / it->m);
 		}
 
 		it->age -= 0.1;
 
-		if (it->age < 0.0) {
+		if (it->age < 0.0) {	// 삭제 조건
 			it = PSystem.erase(it);
 			continue;
 		}
 
-		if (it->m > 19.9 && (it->age < 0.3 && it->age > 0.2)) {
+		if (it->m > 19.9 && (it->age < 0.3 && it->age > 0.2)) { // 추가 불꽃놀이 생성 조건
 			double x0 = it->x[0];
 			double x1 = it->x[1];
 
@@ -152,7 +148,6 @@ void iter(double dt, vector<Particle>::iterator it) {
 		}
 		count++;
 		it = PSystem.begin() + count;
-		//++it;
 	}
 }
 
@@ -166,8 +161,7 @@ void Timer(int id) {
 	iter(dt, it);
 
 	glutPostRedisplay();
-	//printf("particle count = %d\n", PSystem.size());
-	//printf("clicked %d times : Elapsed time = %u ms\n", mouseCount, clock() - st);
+
 	long time = clock() - st;
 	max = (time > max) ? time : max;
 
@@ -245,15 +239,14 @@ void Render() {
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 	for (int i = 0; i < PSystem.size(); ++i) {
-		glLineWidth(PSystem[i].size);
+		glLineWidth(PSystem[i].size);	// 불꽃놀이 잔상
 		glBegin(GL_LINE_STRIP);
-		//glColor3d(PSystem[i].c[0] * 0.8, PSystem[i].c[1] * 0.8, PSystem[i].c[2] * 0.8);
 		for (int j = 14; j > 0; j--) {
 			glVertex3dv(PSystem[i].hist[j]);
 		}
 		glEnd();
 
-		glPointSize(PSystem[i].size);
+		glPointSize(PSystem[i].size);	// 입자
 		glBegin(GL_POINTS);
 		glColor3dv(PSystem[i].c);
 		glVertex3dv(PSystem[i].x);
@@ -265,15 +258,4 @@ void Render() {
 
 void Keyboard(unsigned char key, int x, int y) {
 	if (key == 27) exit(1);
-
-	if (key == '1') {
-		ExtForce[0] = 100.0;
-		ExtForce[1] = 0.0;
-		ExtForce[2] = 0.0;
-	}
-	if (key == '2') {
-		ExtForce[0] = -100.0;
-		ExtForce[1] = 0.0;
-		ExtForce[2] = 0.0;
-	}
 }

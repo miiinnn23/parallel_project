@@ -1,4 +1,4 @@
-﻿16:20:37.525     0>$(MSBuildExtensionsPath)에 사용 중인 검색 경로는 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild입니다.
+﻿12:03:37.590     0>$(MSBuildExtensionsPath)에 사용 중인 검색 경로는 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild입니다.
                    확장 경로 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild을(를) 사용하여 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\$(MSBuildToolsVersion)\Microsoft.Common.props을(를) 가져옵니다.
                    속성 재할당: $(MSBuildProjectExtensionsPath)=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Microsoft.Common.props(56,5)의 "\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\obj\"(이전 값: "obj\")
                    $(MSBuildExtensionsPath)에 사용 중인 검색 경로는 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild;$(MSBuildProgramFiles32)\MSBuild입니다.
@@ -896,7 +896,7 @@
                    "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 프로젝트의 "GetNativeManifest" 대상을 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 프로젝트의 "GetNativeManifest" 대상으로 재정의하고 있습니다.
                    "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 프로젝트의 "GetTargetPathWithTargetPlatformMoniker" 대상을 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" 프로젝트의 "GetTargetPathWithTargetPlatformMoniker" 대상으로 재정의하고 있습니다.
                    "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\CodeAnalysis\Microsoft.CodeAnalysis.targets(57,12)"의 BeforeTargets 특성에 나열된 "CoreCompile" 대상이 프로젝트에 없으며 무시됩니다.
-빌드 시작: 2021-06-03 오후 4:20:38
+빌드 시작: 2021-06-11 오후 12:03:38
 빌드 시작 환경:
                    ALLUSERSPROFILE = C:\ProgramData
                    APPDATA = C:\Users\s2019112540\AppData\Roaming
@@ -914,7 +914,7 @@
                    HOMEDRIVE = C:
                    HOMEPATH = \Users\s2019112540
                    LOCALAPPDATA = C:\Users\s2019112540\AppData\Local
-                   LOGONSERVER = \\DG-DC1
+                   LOGONSERVER = \\DG-DC2
                    MSBuildLoadMicrosoftTargetsReadOnly = true
                    NUMBER_OF_PROCESSORS = 6
                    NVCUDASAMPLES10_2_ROOT = C:\ProgramData\NVIDIA Corporation\CUDA Samples\v10.2
@@ -937,7 +937,7 @@
                    ProgramW6432 = C:\Program Files
                    PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
                    PUBLIC = C:\Users\Public
-                   ServiceHubLogSessionKey = 153E93FB
+                   ServiceHubLogSessionKey = 7FBF608B
                    SESSIONNAME = Console
                    SystemDrive = C:
                    SystemRoot = C:\Windows
@@ -960,8 +960,8 @@
                    VSSKUEDITION = Community
                    windir = C:\Windows
 
-로깅의 세부 정보 표시가 Diagnostic(으)로 설정되었습니다.16:20:37.632     1>2 노드의 "\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트(Build 대상)입니다.
-16:20:37.632     1>초기 속성:
+로깅의 세부 정보 표시가 Diagnostic(으)로 설정되었습니다.12:03:37.711     1>2 노드의 "\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트(Build 대상)입니다.
+12:03:37.711     1>초기 속성:
                    _AfterCompileWinFXInternalDependsOn = 
                            PrepareResourcesForSatelliteAssemblies;
                            MergeLocalizationDirectives;
@@ -1756,7 +1756,7 @@
                    LocalDebuggerWorkingDirectory = \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\
                    LocalGPUDebuggerTargetType = {F4453496-1DB8-47F8-A7D5-31EBDDC2EC96}
                    LocalizationDirectivesToLocFile = None
-                   LOGONSERVER = \\DG-DC1
+                   LOGONSERVER = \\DG-DC2
                    ManagedAssembly = false
                    ManagedIncrementalBuildProcessDependencyGraphAfterTarget = 
                          ClCompile
@@ -1804,7 +1804,7 @@
                    MSBuildRuntimeType = Full
                    MSBuildRuntimeVersion = 4.0.30319
                    MSBuildSDKsPath = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Sdks
-                   MSBuildStartupDirectory = \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework
+                   MSBuildStartupDirectory = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE
                    MSBuildToolsPath = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin
                    MSBuildToolsPath32 = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin
                    MSBuildToolsPath64 = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\amd64
@@ -2064,7 +2064,7 @@
                    SDKReferenceDirectoryRoot = C:\Users\s2019112540\AppData\Local\Microsoft SDKs;C:\Program Files (x86)\Microsoft SDKs
                    SDKReferenceRegistryRoot = Software\Microsoft\Microsoft SDKs
                    SDKVersion = 10.0
-                   ServiceHubLogSessionKey = 153E93FB
+                   ServiceHubLogSessionKey = 7FBF608B
                    SESSIONNAME = Console
                    SGenFilesOutputGroupDependenciesDependsOn = 
                          ;
@@ -2282,8 +2282,8 @@
                    VsInstallRoot = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community
                    VSLANG = 1042
                    VSSKUEDITION = Community
-                   VSTEL_CurrentSolutionBuildID = 604359406
-                   VSTEL_SolutionSessionID = {6EA762DC-CCB1-41DB-8F86-4F3103B1742D}
+                   VSTEL_CurrentSolutionBuildID = 81332296
+                   VSTEL_SolutionSessionID = {EDC02B3F-D84C-40CC-B020-C7B932B8F4C5}
                    VSVersion = $(VisualStudioVersion)
                    WDKBinRoot = C:\Program Files (x86)\Windows Kits\10\bin\10.0.16299.0
                    WDKBinRoot_x64 = C:\Program Files (x86)\Windows Kits\10\bin\10.0.16299.0\x64
@@ -2345,9 +2345,9 @@
                    XamlTemporaryAssemblyName = CPU
                    YieldDuringToolExecution = true
 
-16:20:37.632     1>도구 버전 "Current"(을)를 사용하여 빌드하고 있습니다.
+12:03:37.711     1>도구 버전 "Current"(을)를 사용하여 빌드하고 있습니다.
                    조건이 잘못되어 "EnableIntermediateOutputPathMismatchWarning" 대상을 건너뜁니다. ('$(RestoreProjectStyle)' == 'PackageReference')이(가) ('' == 'PackageReference')(으)로 확인되었습니다.
-16:20:37.633     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "_CheckForInvalidConfigurationAndPlatform: (대상 ID:2)" 대상("SetTelemetryEnvironmentVariables" 대상이 종속됨):
+12:03:37.714     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "_CheckForInvalidConfigurationAndPlatform: (대상 ID:2)" 대상("SetTelemetryEnvironmentVariables" 대상이 종속됨):
                    설정 속성: _InvalidConfigurationMessageText=The OutputPath property is not set for project 'CPU.vcxproj'.  Please check to make sure that you have specified a valid combination of Configuration and Platform for this project.  Configuration='Debug'  Platform='x64'.
                    설정 속성: _InvalidConfigurationMessageText=The OutputPath property is not set for project 'CPU.vcxproj'.  Please check to make sure that you have specified a valid combination of Configuration and Platform for this project.  Configuration='Debug'  Platform='x64'.  This error may also appear if some other project is trying to follow a project-to-project reference to this project, this project has been unloaded or is not included in the solution, and the referencing project does not build using the same or an equivalent Configuration or Platform.
                    조건이 잘못되어 "Error" 작업을 건너뜁니다. ( '$(_InvalidConfigurationError)' == 'true' )이(가) ( '' == 'true' )(으)로 확인되었습니다.
@@ -2368,21 +2368,21 @@
                    조건이 잘못되어 "Error" 작업을 건너뜁니다. ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)'))이(가) ('x64\Debug\' != '' and !HasTrailingSlash('x64\Debug\'))(으)로 확인되었습니다.
                    조건이 잘못되어 "Error" 작업을 건너뜁니다. ( '$(_InitialMSBuildProjectExtensionsPath)' != '' And '$(MSBuildProjectExtensionsPath)' != '$(_InitialMSBuildProjectExtensionsPath)' )이(가) ( '\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\obj\' != '' And '\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\obj\' != '\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\obj\' )(으)로 확인되었습니다.
                    조건이 잘못되어 "Warning" 작업을 건너뜁니다. ( '$(EnableBaseIntermediateOutputPathMismatchWarning)' == 'true' And '$(_InitialBaseIntermediateOutputPath)' != '$(BaseIntermediateOutputPath)' And '$(BaseIntermediateOutputPath)' != '$(MSBuildProjectExtensionsPath)' )이(가) ( '' == 'true' And 'obj\' != 'obj\' And 'obj\' != '\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\obj\' )(으)로 확인되었습니다.
-16:20:37.636     1>"CPU.vcxproj" 프로젝트에 "_CheckForInvalidConfigurationAndPlatform" 대상을 빌드했습니다.: (대상 ID:2)
+12:03:37.747     1>"CPU.vcxproj" 프로젝트에 "_CheckForInvalidConfigurationAndPlatform" 대상을 빌드했습니다.: (대상 ID:2)
                    "_CheckForInvalidConfigurationAndPlatform" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.636     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" 파일에 있는 "SetTelemetryEnvironmentVariables: (대상 ID:3)" 대상("Build" 대상이 종속됨):
+12:03:37.747     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" 파일에 있는 "SetTelemetryEnvironmentVariables: (대상 ID:3)" 대상("Build" 대상이 종속됨):
                    "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll" 어셈블리에서 "SetEnv" 작업을 사용합니다.
                    "SetEnv" 작업(작업 ID:4)
                      작업 매개 변수:Name=VSTEL_SolutionSessionID(작업 ID:4)
-                     작업 매개 변수:Value={6EA762DC-CCB1-41DB-8F86-4F3103B1742D}(작업 ID:4)
+                     작업 매개 변수:Value={EDC02B3F-D84C-40CC-B020-C7B932B8F4C5}(작업 ID:4)
                      작업 매개 변수:Prefix=False(작업 ID:4)
-                     VSTEL_SolutionSessionID={6EA762DC-CCB1-41DB-8F86-4F3103B1742D}(작업 ID:4)
+                     VSTEL_SolutionSessionID={EDC02B3F-D84C-40CC-B020-C7B932B8F4C5}(작업 ID:4)
                    "SetEnv" 작업을 실행했습니다.(작업 ID:4)
                    "SetEnv" 작업(작업 ID:5)
                      작업 매개 변수:Name=VSTEL_CurrentSolutionBuildID(작업 ID:5)
-                     작업 매개 변수:Value=604359406(작업 ID:5)
+                     작업 매개 변수:Value=81332296(작업 ID:5)
                      작업 매개 변수:Prefix=False(작업 ID:5)
-                     VSTEL_CurrentSolutionBuildID=604359406(작업 ID:5)
+                     VSTEL_CurrentSolutionBuildID=81332296(작업 ID:5)
                    "SetEnv" 작업을 실행했습니다.(작업 ID:5)
                    "SetEnv" 작업(작업 ID:6)
                      작업 매개 변수:Name=VSTEL_ProjectID(작업 ID:6)
@@ -2391,8 +2391,8 @@
                      VSTEL_ProjectID={7F478D27-8C1E-4F7A-8204-81A09898A3AB}(작업 ID:6)
                      출력 속성: VSTEL_ProjectID={7F478D27-8C1E-4F7A-8204-81A09898A3AB}(작업 ID:6)
                    "SetEnv" 작업을 실행했습니다.(작업 ID:6)
-16:20:37.636     1>"CPU.vcxproj" 프로젝트에 "SetTelemetryEnvironmentVariables" 대상을 빌드했습니다.: (대상 ID:3)
-16:20:37.636     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" 파일에 있는 "_PrepareForBuild: (대상 ID:4)" 대상("Build" 대상이 종속됨):
+12:03:37.758     1>"CPU.vcxproj" 프로젝트에 "SetTelemetryEnvironmentVariables" 대상을 빌드했습니다.: (대상 ID:3)
+12:03:37.758     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" 파일에 있는 "_PrepareForBuild: (대상 ID:4)" 대상("Build" 대상이 종속됨):
                    설정 속성: BuildType=Build
                    설정 속성: _BuildActionType=Build
                    조건이 잘못되어 "CreateItem" 작업을 건너뜁니다. ('%(CustomBuild.IncludeFileToTool)'!='')이(가) (''!='')(으)로 확인되었습니다.
@@ -2400,17 +2400,17 @@
                        CustomBuildStep=
                            CPU
                                    Message=Performing Custom Build Step
-16:20:37.636     1>"CPU.vcxproj" 프로젝트에 "_PrepareForBuild" 대상을 빌드했습니다.: (대상 ID:4)
-16:20:37.636     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_PrepareForReferenceResolution: (대상 ID:5)" 대상("ResolveReferences" 대상이 종속됨):
+12:03:37.760     1>"CPU.vcxproj" 프로젝트에 "_PrepareForBuild" 대상을 빌드했습니다.: (대상 ID:4)
+12:03:37.760     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_PrepareForReferenceResolution: (대상 ID:5)" 대상("ResolveReferences" 대상이 종속됨):
                    설정 속성: TargetFrameworkMoniker=
                    설정 속성: _FindDependencies=false
                    설정 속성: AdditionalExplicitAssemblyReferences=
                    조건이 잘못되어 "Message" 작업을 건너뜁니다. ('$(_REFERENCE_DEBUG)'=='true')이(가) (''=='true')(으)로 확인되었습니다.
-16:20:37.636     1>"CPU.vcxproj" 프로젝트에 "_PrepareForReferenceResolution" 대상을 빌드했습니다.: (대상 ID:5)
+12:03:37.761     1>"CPU.vcxproj" 프로젝트에 "_PrepareForReferenceResolution" 대상을 빌드했습니다.: (대상 ID:5)
                    조건이 잘못되어 "ComputeCrtSDKReference" 대상을 건너뜁니다. ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false')이(가) ('firework_cpu.cpp'!='' and 'false'=='true' and '' != 'false')(으)로 확인되었습니다.
-16:20:37.636     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BeforeResolveReferences: (대상 ID:6)" 대상("ResolveReferences" 대상이 종속됨):
-16:20:37.636     1>"CPU.vcxproj" 프로젝트에 "BeforeResolveReferences" 대상을 빌드했습니다.: (대상 ID:6)
-16:20:37.636     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "AssignProjectConfiguration: (대상 ID:7)" 대상("ResolveReferences" 대상이 종속됨):
+12:03:37.761     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BeforeResolveReferences: (대상 ID:6)" 대상("ResolveReferences" 대상이 종속됨):
+12:03:37.761     1>"CPU.vcxproj" 프로젝트에 "BeforeResolveReferences" 대상을 빌드했습니다.: (대상 ID:6)
+12:03:37.761     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "AssignProjectConfiguration: (대상 ID:7)" 대상("ResolveReferences" 대상이 종속됨):
                    설정 속성: ShouldUnsetParentConfigurationAndPlatform=true
                    "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 어셈블리에서 "AssignProjectConfiguration" 작업을 사용합니다.
                    "AssignProjectConfiguration" 작업(작업 ID:7)
@@ -2426,12 +2426,12 @@
                      작업 매개 변수:OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration=True(작업 ID:7)
                      작업 매개 변수:ShouldUnsetParentConfigurationAndPlatform=True(작업 ID:7)
                    "AssignProjectConfiguration" 작업을 실행했습니다.(작업 ID:7)
-16:20:37.636     1>"CPU.vcxproj" 프로젝트에 "AssignProjectConfiguration" 대상을 빌드했습니다.: (대상 ID:7)
+12:03:37.762     1>"CPU.vcxproj" 프로젝트에 "AssignProjectConfiguration" 대상을 빌드했습니다.: (대상 ID:7)
                    "AssignProjectConfiguration" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.636     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "_SplitProjectReferencesByFileExistence: (대상 ID:8)" 대상("PrepareProjectReferences" 대상이 종속됨):
+12:03:37.762     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "_SplitProjectReferencesByFileExistence: (대상 ID:8)" 대상("PrepareProjectReferences" 대상이 종속됨):
                    조건이 잘못되어 "ResolveNonMSBuildProjectOutput" 작업을 건너뜁니다. ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='')이(가) ('true'=='true' and ''!='')(으)로 확인되었습니다.
-16:20:37.637     1>"CPU.vcxproj" 프로젝트에 "_SplitProjectReferencesByFileExistence" 대상을 빌드했습니다.: (대상 ID:8)
-16:20:37.637     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "_GetProjectReferenceTargetFrameworkProperties: (대상 ID:9)" 대상("PrepareProjectReferences" 대상이 종속됨):
+12:03:37.762     1>"CPU.vcxproj" 프로젝트에 "_SplitProjectReferencesByFileExistence" 대상을 빌드했습니다.: (대상 ID:8)
+12:03:37.762     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "_GetProjectReferenceTargetFrameworkProperties: (대상 ID:9)" 대상("PrepareProjectReferences" 대상이 종속됨):
                    설정 속성: ReferringTargetFrameworkForProjectReferences=.NETFramework,Version=v4.0
                    "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 어셈블리에서 "MSBuild" 작업을 사용합니다.
                    "MSBuild" 작업(작업 ID:8)
@@ -2441,23 +2441,23 @@
                      작업 매개 변수:SkipNonexistentTargets=True(작업 ID:8)
                    "MSBuild" 작업을 실행했습니다.(작업 ID:8)
                    조건이 잘못되어 "GetReferenceNearestTargetFrameworkTask" 작업을 건너뜁니다. ('@(_ProjectReferenceTargetFrameworkPossibilities->Count())' != '0' and '$(ReferringTargetFrameworkForProjectReferences)' != '')이(가) ('0' != '0' and '.NETFramework,Version=v4.0' != '')(으)로 확인되었습니다.
-16:20:37.637     1>"CPU.vcxproj" 프로젝트에 "_GetProjectReferenceTargetFrameworkProperties" 대상을 빌드했습니다.: (대상 ID:9)
-16:20:37.637     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "PrepareProjectReferences: (대상 ID:10)" 대상("ResolveProjectReferences" 대상이 종속됨):
-16:20:37.637     1>"CPU.vcxproj" 프로젝트에 "PrepareProjectReferences" 대상을 빌드했습니다.: (대상 ID:10)
+12:03:37.763     1>"CPU.vcxproj" 프로젝트에 "_GetProjectReferenceTargetFrameworkProperties" 대상을 빌드했습니다.: (대상 ID:9)
+12:03:37.763     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "PrepareProjectReferences: (대상 ID:10)" 대상("ResolveProjectReferences" 대상이 종속됨):
+12:03:37.763     1>"CPU.vcxproj" 프로젝트에 "PrepareProjectReferences" 대상을 빌드했습니다.: (대상 ID:10)
                    조건이 잘못되어 "_RemoveNameMetadataFromProjectReferenceItems" 대상을 건너뜁니다. ('@(ProjectReference)'!='')이(가) (''!='')(으)로 확인되었습니다.
-16:20:37.637     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "ResolveProjectReferences: (대상 ID:11)" 대상("ResolveReferences" 대상이 종속됨):
+12:03:37.763     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "ResolveProjectReferences: (대상 ID:11)" 대상("ResolveReferences" 대상이 종속됨):
                    조건이 잘못되어 "MSBuild" 작업을 건너뜁니다. ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '')이(가) ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '16.0' != '10.0' and '' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "MSBuild" 작업을 건너뜁니다. ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '')이(가) ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '16.0' == '10.0' and '' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "MSBuild" 작업을 건너뜁니다. ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '')이(가) ('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "MSBuild" 작업을 건너뜁니다. ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '')이(가) ('' == 'true' and '' != '' and 'true' == 'true' and '' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "Warning" 작업을 건너뜁니다. ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '')이(가) ('' != '' and '' != '')(으)로 확인되었습니다.
-16:20:37.638     1>"CPU.vcxproj" 프로젝트에 "ResolveProjectReferences" 대상을 빌드했습니다.: (대상 ID:11)
+12:03:37.778     1>"CPU.vcxproj" 프로젝트에 "ResolveProjectReferences" 대상을 빌드했습니다.: (대상 ID:11)
                    조건이 잘못되어 "FindInvalidProjectReferences" 대상을 건너뜁니다. ('$(FindInvalidProjectReferences)' == 'true')이(가) ('' == 'true')(으)로 확인되었습니다.
                    조건이 잘못되어 "ResolveNativeReferences" 대상을 건너뜁니다. ('@(NativeReference)'!='')이(가) (''!='')(으)로 확인되었습니다.
                    "_PrepareForReferenceResolution" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "ResolveProjectReferences" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    조건이 잘못되어 "FindInvalidProjectReferences" 대상을 건너뜁니다. ('$(FindInvalidProjectReferences)' == 'true')이(가) ('' == 'true')(으)로 확인되었습니다.
-16:20:37.638     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.NETFramework.CurrentVersion.targets" 파일에 있는 "GetFrameworkPaths: (대상 ID:12)" 대상("ResolveAssemblyReferences" 대상이 종속됨):
+12:03:37.778     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.NETFramework.CurrentVersion.targets" 파일에 있는 "GetFrameworkPaths: (대상 ID:12)" 대상("ResolveAssemblyReferences" 대상이 종속됨):
                    추가된 항목: _TargetFramework40DirectoryItem=C:\Windows\Microsoft.NET\Framework\v4.0.30319
                    추가된 항목: _TargetFramework35DirectoryItem=C:\Windows\Microsoft.NET\Framework\v3.5
                    추가된 항목: _TargetFramework30DirectoryItem=C:\Windows\Microsoft.NET\Framework\v3.0
@@ -2466,18 +2466,18 @@
                    추가된 항목: _CombinedTargetFrameworkDirectoriesItem=C:\Windows\Microsoft.NET\Framework\v4.0.30319
                    설정 속성: TargetFrameworkDirectory=C:\Windows\Microsoft.NET\Framework\v4.0.30319
                    설정 속성: TargetFrameworkSDKDirectory=
-16:20:37.638     1>"CPU.vcxproj" 프로젝트에 "GetFrameworkPaths" 대상을 빌드했습니다.: (대상 ID:12)
+12:03:37.779     1>"CPU.vcxproj" 프로젝트에 "GetFrameworkPaths" 대상을 빌드했습니다.: (대상 ID:12)
                    "_PrepareForReferenceResolution" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    조건이 잘못되어 "GetWinFXPath" 대상을 건너뜁니다. (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' ))이(가) (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' ))(으)로 확인되었습니다.
                    "GetFrameworkPaths" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.638     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "GetReferenceAssemblyPaths: (대상 ID:13)" 대상("ResolveAssemblyReferences" 대상이 종속됨):
+12:03:37.779     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "GetReferenceAssemblyPaths: (대상 ID:13)" 대상("ResolveAssemblyReferences" 대상이 종속됨):
                    설정 속성: TargetFrameworkDirectory=
                    조건이 잘못되어 "GetReferenceAssemblyPaths" 작업을 건너뜁니다. ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == ''))이(가) ('' != '' and ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '' or 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == ''))(으)로 확인되었습니다.
                    설정 속성: TargetFrameworkDirectory=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0;;
                    설정 속성: TargetFrameworkDirectory=C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0;;;C:\Program Files (x86)\Windows Kits\10\References
                    설정 속성: RemoveAssemblyFoldersIfNoTargetFramework=true
-16:20:37.638     1>"CPU.vcxproj" 프로젝트에 "GetReferenceAssemblyPaths" 대상을 빌드했습니다.: (대상 ID:13)
-16:20:37.638     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Current.targets" 파일에 있는 "SetBuildDefaultEnvironmentVariables: (대상 ID:14)" 대상("PrepareForBuild" 대상이 종속됨):
+12:03:37.779     1>"CPU.vcxproj" 프로젝트에 "GetReferenceAssemblyPaths" 대상을 빌드했습니다.: (대상 ID:13)
+12:03:37.779     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Current.targets" 파일에 있는 "SetBuildDefaultEnvironmentVariables: (대상 ID:14)" 대상("PrepareForBuild" 대상이 종속됨):
                    "SetEnv" 작업(작업 ID:9)
                      작업 매개 변수:Name=PATH(작업 ID:9)
                      작업 매개 변수:Value=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x64;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86;C:\Program Files (x86)\Windows Kits\10\bin\10.0.16299.0\x86;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\multi\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.1\;C:\Users\s2019112540\AppData\Local\Microsoft\WindowsApps;C:\Users\s2019112540\AppData\Local\GitHubDesktop\bin;\\4105-42\Users\s2019112540\AppData\Local\GitHubDesktop\bin;(작업 ID:9)
@@ -2506,10 +2506,10 @@
                      INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\atlmfc\include;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt;;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\winrt;Include\um;(작업 ID:12)
                      출력 속성: INCLUDE=C:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include%3b%3bC:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\atlmfc\include%3b%3bC:\Program Files %28x86%29\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include%3b%3bC:\Program Files %28x86%29\Windows Kits\10\Include\10.0.16299.0\ucrt%3b%3b%3bC:\Program Files %28x86%29\Windows Kits\10\Include\10.0.16299.0\um%3bC:\Program Files %28x86%29\Windows Kits\10\Include\10.0.16299.0\shared%3bC:\Program Files %28x86%29\Windows Kits\10\Include\10.0.16299.0\winrt%3bInclude\um%3b(작업 ID:12)
                    "SetEnv" 작업을 실행했습니다.(작업 ID:12)
-16:20:37.638     1>"CPU.vcxproj" 프로젝트에 "SetBuildDefaultEnvironmentVariables" 대상을 빌드했습니다.: (대상 ID:14)
+12:03:37.779     1>"CPU.vcxproj" 프로젝트에 "SetBuildDefaultEnvironmentVariables" 대상을 빌드했습니다.: (대상 ID:14)
                    조건이 잘못되어 "SetUserMacroEnvironmentVariables" 대상을 건너뜁니다. ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true')이(가) ('' != '' and '' != 'true')(으)로 확인되었습니다.
                    "_PrepareForReferenceResolution" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.638     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "GetResolvedWinMD: (대상 ID:15)" 대상("PrepareForBuild" 대상이 종속됨):
+12:03:37.779     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "GetResolvedWinMD: (대상 ID:15)" 대상("PrepareForBuild" 대상이 종속됨):
                    추가된 항목: 
                        Link=
                            tmp
@@ -2594,8 +2594,8 @@
                                    TypeLibraryResourceID=1
                                    UACExecutionLevel=AsInvoker
                                    UACUIAccess=false
-16:20:37.639     1>"CPU.vcxproj" 프로젝트에 "GetResolvedWinMD" 대상을 빌드했습니다.: (대상 ID:15)
-16:20:37.639     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.WindowsSDK.targets" 파일에 있는 "_CheckWindowsSDKInstalled: (대상 ID:16)" 대상("PrepareForBuild" 대상이 종속됨):
+12:03:37.780     1>"CPU.vcxproj" 프로젝트에 "GetResolvedWinMD" 대상을 빌드했습니다.: (대상 ID:15)
+12:03:37.780     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.WindowsSDK.targets" 파일에 있는 "_CheckWindowsSDKInstalled: (대상 ID:16)" 대상("PrepareForBuild" 대상이 종속됨):
                    설정 속성: WindowsSDKInstalled=false
                    설정 속성: WindowsSDK_UAP_Support=false
                    설정 속성: WindowsSDK_Desktop_Support=false
@@ -2604,11 +2604,11 @@
                    설정 속성: WindowsSDK_Desktop_Support=true
                    조건이 잘못되어 "VCMessage" 작업을 건너뜁니다. ('$(WindowsSDKInstalled)' != 'true')이(가) ('true' != 'true')(으)로 확인되었습니다.
                    조건이 잘못되어 "VCMessage" 작업을 건너뜁니다. ('$(WindowsAppContainer)' != 'true' and '$(WindowsSDK_Desktop_Support)' != true)이(가) ('false' != 'true' and 'true' != true)(으)로 확인되었습니다.
-16:20:37.639     1>"CPU.vcxproj" 프로젝트에 "_CheckWindowsSDKInstalled" 대상을 빌드했습니다.: (대상 ID:16)
+12:03:37.780     1>"CPU.vcxproj" 프로젝트에 "_CheckWindowsSDKInstalled" 대상을 빌드했습니다.: (대상 ID:16)
                    "GetFrameworkPaths" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "GetReferenceAssemblyPaths" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    조건이 잘못되어 "AssignLinkMetadata" 대상을 건너뜁니다. ( '$(SynthesizeLinkMetadata)' == 'true' )이(가) ( '' == 'true' )(으)로 확인되었습니다.
-16:20:37.639     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" 파일에 있는 "SetCABuildNativeEnvironmentVariables: (대상 ID:17)" 대상("PrepareForBuild" 대상이 종속됨):
+12:03:37.780     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" 파일에 있는 "SetCABuildNativeEnvironmentVariables: (대상 ID:17)" 대상("PrepareForBuild" 대상이 종속됨):
                    "SetEnv" 작업(작업 ID:13)
                      작업 매개 변수:Value=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\winrt;Include\um;(작업 ID:13)
                      작업 매개 변수:Name=CAExcludePath(작업 ID:13)
@@ -2616,8 +2616,8 @@
                      CAExcludePath=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\winrt;Include\um;(작업 ID:13)
                    "SetEnv" 작업을 실행했습니다.(작업 ID:13)
                    조건이 잘못되어 "SetEnv" 작업을 건너뜁니다. ('$(RunMsvcAnalysis)'=='true' and '$(VCCodeAnalysisUX)'=='true')이(가) ('false'=='true' and 'true'=='true')(으)로 확인되었습니다.
-16:20:37.639     1>"CPU.vcxproj" 프로젝트에 "SetCABuildNativeEnvironmentVariables" 대상을 빌드했습니다.: (대상 ID:17)
-16:20:37.639     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "PrepareForBuild: (대상 ID:18)" 대상("ResolveAssemblyReferences" 대상이 종속됨):
+12:03:37.780     1>"CPU.vcxproj" 프로젝트에 "SetCABuildNativeEnvironmentVariables" 대상을 빌드했습니다.: (대상 ID:17)
+12:03:37.780     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "PrepareForBuild: (대상 ID:18)" 대상("ResolveAssemblyReferences" 대상이 종속됨):
                    설정 속성: TargetDir=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\
                    설정 속성: LocalDebuggerCommand=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.exe
                    설정 속성: BuildProjectReferences=false
@@ -2753,19 +2753,19 @@
                              \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\
                              x64\Debug\CPU.tlog\(작업 ID:16)
                    "MakeDir" 작업을 실행했습니다.(작업 ID:16)
-16:20:37.662     1>"CPU.vcxproj" 프로젝트에 "PrepareForBuild" 대상을 빌드했습니다.: (대상 ID:18)
+12:03:37.808     1>"CPU.vcxproj" 프로젝트에 "PrepareForBuild" 대상을 빌드했습니다.: (대상 ID:18)
                    "_PrepareForReferenceResolution" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    조건이 잘못되어 "ComputeCrtSDKReference" 대상을 건너뜁니다. ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false')이(가) ('firework_cpu.cpp'!='' and 'false'=='true' and '' != 'false')(으)로 확인되었습니다.
                    조건이 잘못되어 "GetInstalledSDKLocations" 대상을 건너뜁니다. ('@(SDKReference)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:37.662     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "ResolveSDKReferences: (대상 ID:19)" 대상("ResolveAssemblyReferences" 대상이 종속됨):
+12:03:37.808     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "ResolveSDKReferences: (대상 ID:19)" 대상("ResolveAssemblyReferences" 대상이 종속됨):
                    조건이 잘못되어 "ResolveSDKReference" 작업을 건너뜁니다. ('@(SDKReference)'!='')이(가) (''!='')(으)로 확인되었습니다.
-16:20:37.662     1>"CPU.vcxproj" 프로젝트에 "ResolveSDKReferences" 대상을 빌드했습니다.: (대상 ID:19)
+12:03:37.808     1>"CPU.vcxproj" 프로젝트에 "ResolveSDKReferences" 대상을 빌드했습니다.: (대상 ID:19)
                    "ResolveSDKReferences" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.662     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "ExpandSDKReferences: (대상 ID:20)" 대상("ResolveAssemblyReferences" 대상이 종속됨):
+12:03:37.808     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "ExpandSDKReferences: (대상 ID:20)" 대상("ResolveAssemblyReferences" 대상이 종속됨):
                    조건이 잘못되어 "GetSDKReferenceFiles" 작업을 건너뜁니다. ('@(ResolvedSDKReference)'!='')이(가) (''!='')(으)로 확인되었습니다.
-16:20:37.662     1>"CPU.vcxproj" 프로젝트에 "ExpandSDKReferences" 대상을 빌드했습니다.: (대상 ID:20)
+12:03:37.808     1>"CPU.vcxproj" 프로젝트에 "ExpandSDKReferences" 대상을 빌드했습니다.: (대상 ID:20)
                    조건이 잘못되어 "ResolveNuGetPackageAssets" 대상을 건너뜁니다. ('$(ResolveNuGetPackages)' == 'true' and exists('$(ProjectLockFile)'))이(가) ('true' == 'true' and exists('obj\project.assets.json'))(으)로 확인되었습니다.
-16:20:37.662     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "ResolveAssemblyReferences: (대상 ID:21)" 대상("ResolveReferences" 대상이 종속됨):
+12:03:37.809     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "ResolveAssemblyReferences: (대상 ID:21)" 대상("ResolveReferences" 대상이 종속됨):
                    추가된 항목: 
                        _ReferenceInstalledAssemblyDirectory=
                            C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0
@@ -2775,19 +2775,19 @@
                    설정 속성: ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch=Warning
                    설정 속성: FindDependenciesOfExternallyResolvedReferences=false
                    조건이 잘못되어 "ResolveAssemblyReference" 작업을 건너뜁니다. ('@(Reference)'!='' or '@(_ResolvedProjectReferencePaths)'!='' or '@(_ExplicitReference)' != '')이(가) (''!='' or ''!='' or '' != '')(으)로 확인되었습니다.
-16:20:37.662     1>"CPU.vcxproj" 프로젝트에 "ResolveAssemblyReferences" 대상을 빌드했습니다.: (대상 ID:21)
+12:03:37.809     1>"CPU.vcxproj" 프로젝트에 "ResolveAssemblyReferences" 대상을 빌드했습니다.: (대상 ID:21)
                    조건이 잘못되어 "GenerateBindingRedirects" 대상을 건너뜁니다. ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true')이(가) ('' == 'true' and 'true' == 'true')(으)로 확인되었습니다.
                    조건이 잘못되어 "GenerateBindingRedirectsUpdateAppConfig" 대상을 건너뜁니다. ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true' and Exists('$(_GenerateBindingRedirectsIntermediateAppConfig)'))이(가) ('' == 'true' and 'true' == 'true' and Exists('x64\Debug\CPU.exe.config'))(으)로 확인되었습니다.
                    조건이 잘못되어 "ResolveComReferences" 대상을 건너뜁니다. ('@(COMReference)'!='' or '@(COMFileReference)'!='')이(가) (''!='' or ''!='')(으)로 확인되었습니다.
-16:20:37.663     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "AfterResolveReferences: (대상 ID:22)" 대상("ResolveReferences" 대상이 종속됨):
-16:20:37.663     1>"CPU.vcxproj" 프로젝트에 "AfterResolveReferences" 대상을 빌드했습니다.: (대상 ID:22)
+12:03:37.809     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "AfterResolveReferences: (대상 ID:22)" 대상("ResolveReferences" 대상이 종속됨):
+12:03:37.809     1>"CPU.vcxproj" 프로젝트에 "AfterResolveReferences" 대상을 빌드했습니다.: (대상 ID:22)
                    조건이 잘못되어 "ImplicitlyExpandDesignTimeFacades" 대상을 건너뜁니다. ('$(ImplicitlyExpandDesignTimeFacades)' == 'true')이(가) ('' == 'true')(으)로 확인되었습니다.
                    조건이 잘못되어 "ResolveTestReferences" 대상을 건너뜁니다. ('@(Shadow)'!='')이(가) (''!='')(으)로 확인되었습니다.
-16:20:37.663     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "ResolveReferences: (대상 ID:23)" 대상("Build" 대상이 종속됨):
-16:20:37.663     1>"CPU.vcxproj" 프로젝트에 "ResolveReferences" 대상을 빌드했습니다.: (대상 ID:23)
+12:03:37.809     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "ResolveReferences: (대상 ID:23)" 대상("Build" 대상이 종속됨):
+12:03:37.809     1>"CPU.vcxproj" 프로젝트에 "ResolveReferences" 대상을 빌드했습니다.: (대상 ID:23)
                    "PrepareForBuild" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "PrepareForBuild" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.663     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "InitializeBuildStatus: (대상 ID:24)" 대상("Build" 대상이 종속됨):
+12:03:37.809     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "InitializeBuildStatus: (대상 ID:24)" 대상("Build" 대상이 종속됨):
                    "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 어셈블리에서 "ReadLinesFromFile" 작업을 사용합니다.
                    "ReadLinesFromFile" 작업(작업 ID:17)
                      작업 매개 변수:File=x64\Debug\CPU.tlog\CPU.lastbuildstate(작업 ID:17)
@@ -2813,33 +2813,33 @@
                      작업 매개 변수:Files=x64\Debug\CPU.tlog\unsuccessfulbuild(작업 ID:19)
                      "AlwaysCreate"이(가) 지정되었기 때문에 "x64\Debug\CPU.tlog\unsuccessfulbuild"을(를) 만들고 있습니다.(작업 ID:19)
                    "Touch" 작업을 실행했습니다.(작업 ID:19)
-16:20:37.688     1>"CPU.vcxproj" 프로젝트에 "InitializeBuildStatus" 대상을 빌드했습니다.: (대상 ID:24)
+12:03:37.854     1>"CPU.vcxproj" 프로젝트에 "InitializeBuildStatus" 대상을 빌드했습니다.: (대상 ID:24)
                    "PrepareProjectReferences" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.688     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BuildGenerateSourcesTraverse: (대상 ID:25)" 대상("BuildGenerateSources" 대상이 종속됨):
+12:03:37.854     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BuildGenerateSourcesTraverse: (대상 ID:25)" 대상("BuildGenerateSources" 대상이 종속됨):
                    조건이 잘못되어 "MSBuild" 작업을 건너뜁니다. ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true')이(가) ('' == 'true' and '' != '' and '' != '' and '' == 'true')(으)로 확인되었습니다.
-16:20:37.688     1>"CPU.vcxproj" 프로젝트에 "BuildGenerateSourcesTraverse" 대상을 빌드했습니다.: (대상 ID:25)
+12:03:37.855     1>"CPU.vcxproj" 프로젝트에 "BuildGenerateSourcesTraverse" 대상을 빌드했습니다.: (대상 ID:25)
                    "PrepareForBuild" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "ResolveReferences" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.688     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" 파일에 있는 "BeforeBuildGenerateSources: (대상 ID:26)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
-16:20:37.688     1>"CPU.vcxproj" 프로젝트에 "BeforeBuildGenerateSources" 대상을 빌드했습니다.: (대상 ID:26)
-16:20:37.688     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "PreBuildEvent: (대상 ID:27)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
+12:03:37.855     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" 파일에 있는 "BeforeBuildGenerateSources: (대상 ID:26)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
+12:03:37.855     1>"CPU.vcxproj" 프로젝트에 "BeforeBuildGenerateSources" 대상을 빌드했습니다.: (대상 ID:26)
+12:03:37.855     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "PreBuildEvent: (대상 ID:27)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
                    조건이 잘못되어 "Message" 작업을 건너뜁니다. ('%(PreBuildEvent.Message)' != '' and '%(PreBuildEvent.Command)' != '')이(가) ('' != '' and '' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "Exec" 작업을 건너뜁니다. ('%(PreBuildEvent.Command)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:37.688     1>"CPU.vcxproj" 프로젝트에 "PreBuildEvent" 대상을 빌드했습니다.: (대상 ID:27)
+12:03:37.855     1>"CPU.vcxproj" 프로젝트에 "PreBuildEvent" 대상을 빌드했습니다.: (대상 ID:27)
                    "PrepareForBuild" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "InitializeBuildStatus" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "SetBuildDefaultEnvironmentVariables" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    조건이 잘못되어 "SetUserMacroEnvironmentVariables" 대상을 건너뜁니다. ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true')이(가) ('' != '' and '' != 'true')(으)로 확인되었습니다.
-16:20:37.688     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_SelectedFiles: (대상 ID:28)" 대상("SelectCustomBuild" 대상이 종속됨):
-16:20:37.688     1>"CPU.vcxproj" 프로젝트에 "_SelectedFiles" 대상을 빌드했습니다.: (대상 ID:28)
-16:20:37.688     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "SelectCustomBuild: (대상 ID:29)" 대상("CustomBuild" 대상이 종속됨):
-16:20:37.688     1>"CPU.vcxproj" 프로젝트에 "SelectCustomBuild" 대상을 빌드했습니다.: (대상 ID:29)
-16:20:37.688     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeCustomBuildOutput: (대상 ID:30)" 대상("CustomBuild" 대상이 종속됨):
+12:03:37.855     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_SelectedFiles: (대상 ID:28)" 대상("SelectCustomBuild" 대상이 종속됨):
+12:03:37.855     1>"CPU.vcxproj" 프로젝트에 "_SelectedFiles" 대상을 빌드했습니다.: (대상 ID:28)
+12:03:37.855     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "SelectCustomBuild: (대상 ID:29)" 대상("CustomBuild" 대상이 종속됨):
+12:03:37.855     1>"CPU.vcxproj" 프로젝트에 "SelectCustomBuild" 대상을 빌드했습니다.: (대상 ID:29)
+12:03:37.855     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeCustomBuildOutput: (대상 ID:30)" 대상("CustomBuild" 대상이 종속됨):
                    조건이 잘못되어 "CreateItem" 작업을 건너뜁니다. ('%(CustomBuildOutputs.OutputItemType)'!='')이(가) (''!='')(으)로 확인되었습니다.
                    "MakeDir" 작업(작업 ID:20)
                    "MakeDir" 작업을 실행했습니다.(작업 ID:20)
-16:20:37.689     1>"CPU.vcxproj" 프로젝트에 "ComputeCustomBuildOutput" 대상을 빌드했습니다.: (대상 ID:30)
-16:20:37.689     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "CustomBuild: (대상 ID:31)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
+12:03:37.855     1>"CPU.vcxproj" 프로젝트에 "ComputeCustomBuildOutput" 대상을 빌드했습니다.: (대상 ID:30)
+12:03:37.855     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "CustomBuild: (대상 ID:31)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
                    설정 속성: CustomBuildToolArchitecture=Native32Bit
                    "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll" 어셈블리에서 "GetOutOfDateItems" 작업을 사용합니다.
                    "GetOutOfDateItems" 작업(작업 ID:21)
@@ -2859,12 +2859,12 @@
                    "GetOutOfDateItems" 작업을 실행했습니다.(작업 ID:22)
                    조건이 잘못되어 "ParallelCustomBuild" 작업을 건너뜁니다. ('@(_ParallelCustomBuild)' != '')이(가) ('' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "CustomBuild" 작업을 건너뜁니다. ('@(_CustomBuild)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:37.693     1>"CPU.vcxproj" 프로젝트에 "CustomBuild" 대상을 빌드했습니다.: (대상 ID:31)
+12:03:37.862     1>"CPU.vcxproj" 프로젝트에 "CustomBuild" 대상을 빌드했습니다.: (대상 ID:31)
                    조건이 잘못되어 "FxExport" 대상을 건너뜁니다. ('@(FxCompile)' != '')이(가) ('' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "FxCompile" 대상을 건너뜁니다. ('@(FxCompile)' != '')이(가) ('' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "_CreateCopyFileItems" 대상을 건너뜁니다. ('@(CopyFileToFolders)' != '')이(가) ('' != '')(으)로 확인되었습니다.
                    "_SelectedFiles" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.693     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "CopyFileToFolders: (대상 ID:32)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
+12:03:37.862     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "CopyFileToFolders: (대상 ID:32)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
                    "GetOutOfDateItems" 작업(작업 ID:23)
                      작업 매개 변수:OutputsMetadataName=FullDestinationPath(작업 ID:23)
                      작업 매개 변수:CommandMetadataName=FullDestinationPath(작업 ID:23)
@@ -2872,55 +2872,55 @@
                      작업 매개 변수:TLogNamePrefix=CopyFile(작업 ID:23)
                    "GetOutOfDateItems" 작업을 실행했습니다.(작업 ID:23)
                    조건이 잘못되어 "Copy" 작업을 건너뜁니다. ('@(_OutOfDateCopyFile)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:37.695     1>"CPU.vcxproj" 프로젝트에 "CopyFileToFolders" 대상을 빌드했습니다.: (대상 ID:32)
+12:03:37.864     1>"CPU.vcxproj" 프로젝트에 "CopyFileToFolders" 대상을 빌드했습니다.: (대상 ID:32)
                    조건이 잘못되어 "Xsd" 대상을 건너뜁니다. ('@(Xsd)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:37.695     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_Xsd: (대상 ID:33)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
-16:20:37.695     1>"CPU.vcxproj" 프로젝트에 "_Xsd" 대상을 빌드했습니다.: (대상 ID:33)
-16:20:37.695     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "MakeDirsForMidl: (대상 ID:34)" 대상("_Midl" 대상이 종속됨):
+12:03:37.864     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_Xsd: (대상 ID:33)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
+12:03:37.864     1>"CPU.vcxproj" 프로젝트에 "_Xsd" 대상을 빌드했습니다.: (대상 ID:33)
+12:03:37.864     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "MakeDirsForMidl: (대상 ID:34)" 대상("_Midl" 대상이 종속됨):
                    설정 속성: Midl_OutputDir=
                    "Makedir" 작업(작업 ID:24)
                    "Makedir" 작업을 실행했습니다.(작업 ID:24)
-16:20:37.695     1>"CPU.vcxproj" 프로젝트에 "MakeDirsForMidl" 대상을 빌드했습니다.: (대상 ID:34)
+12:03:37.864     1>"CPU.vcxproj" 프로젝트에 "MakeDirsForMidl" 대상을 빌드했습니다.: (대상 ID:34)
                    조건이 잘못되어 "Midl" 대상을 건너뜁니다. ('@(Midl)' != '')이(가) ('' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "FxExport" 대상을 건너뜁니다. ('@(FxCompile)' != '')이(가) ('' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "FxCompile" 대상을 건너뜁니다. ('@(FxCompile)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:37.695     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeMIDLGeneratedCompileInputs: (대상 ID:35)" 대상("_Midl" 대상이 종속됨):
+12:03:37.864     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeMIDLGeneratedCompileInputs: (대상 ID:35)" 대상("_Midl" 대상이 종속됨):
                    설정 속성: Midl_OutputDir=
-16:20:37.695     1>"CPU.vcxproj" 프로젝트에 "ComputeMIDLGeneratedCompileInputs" 대상을 빌드했습니다.: (대상 ID:35)
-16:20:37.695     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "AfterMidl: (대상 ID:36)" 대상("_Midl" 대상이 종속됨):
-16:20:37.695     1>"CPU.vcxproj" 프로젝트에 "AfterMidl" 대상을 빌드했습니다.: (대상 ID:36)
-16:20:37.695     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_Midl: (대상 ID:37)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
-16:20:37.695     1>"CPU.vcxproj" 프로젝트에 "_Midl" 대상을 빌드했습니다.: (대상 ID:37)
-16:20:37.695     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" 파일에 있는 "AfterBuildGenerateSources: (대상 ID:38)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
-16:20:37.695     1>"CPU.vcxproj" 프로젝트에 "AfterBuildGenerateSources" 대상을 빌드했습니다.: (대상 ID:38)
-16:20:37.695     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "AfterBuildGenerateSourcesEvent: (대상 ID:39)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
-16:20:37.695     1>"CPU.vcxproj" 프로젝트에 "AfterBuildGenerateSourcesEvent" 대상을 빌드했습니다.: (대상 ID:39)
-16:20:37.695     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_BuildGenerateSourcesAction: (대상 ID:40)" 대상("BuildGenerateSources" 대상이 종속됨):
-16:20:37.696     1>"CPU.vcxproj" 프로젝트에 "_BuildGenerateSourcesAction" 대상을 빌드했습니다.: (대상 ID:40)
-16:20:37.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BuildGenerateSources: (대상 ID:41)" 대상("Build" 대상이 종속됨):
-16:20:37.696     1>"CPU.vcxproj" 프로젝트에 "BuildGenerateSources" 대상을 빌드했습니다.: (대상 ID:41)
+12:03:37.864     1>"CPU.vcxproj" 프로젝트에 "ComputeMIDLGeneratedCompileInputs" 대상을 빌드했습니다.: (대상 ID:35)
+12:03:37.864     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "AfterMidl: (대상 ID:36)" 대상("_Midl" 대상이 종속됨):
+12:03:37.864     1>"CPU.vcxproj" 프로젝트에 "AfterMidl" 대상을 빌드했습니다.: (대상 ID:36)
+12:03:37.864     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_Midl: (대상 ID:37)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
+12:03:37.864     1>"CPU.vcxproj" 프로젝트에 "_Midl" 대상을 빌드했습니다.: (대상 ID:37)
+12:03:37.864     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" 파일에 있는 "AfterBuildGenerateSources: (대상 ID:38)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
+12:03:37.864     1>"CPU.vcxproj" 프로젝트에 "AfterBuildGenerateSources" 대상을 빌드했습니다.: (대상 ID:38)
+12:03:37.864     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "AfterBuildGenerateSourcesEvent: (대상 ID:39)" 대상("_BuildGenerateSourcesAction" 대상이 종속됨):
+12:03:37.864     1>"CPU.vcxproj" 프로젝트에 "AfterBuildGenerateSourcesEvent" 대상을 빌드했습니다.: (대상 ID:39)
+12:03:37.864     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_BuildGenerateSourcesAction: (대상 ID:40)" 대상("BuildGenerateSources" 대상이 종속됨):
+12:03:37.864     1>"CPU.vcxproj" 프로젝트에 "_BuildGenerateSourcesAction" 대상을 빌드했습니다.: (대상 ID:40)
+12:03:37.864     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BuildGenerateSources: (대상 ID:41)" 대상("Build" 대상이 종속됨):
+12:03:37.864     1>"CPU.vcxproj" 프로젝트에 "BuildGenerateSources" 대상을 빌드했습니다.: (대상 ID:41)
                    "PrepareProjectReferences" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BuildCompileTraverse: (대상 ID:42)" 대상("BuildCompile" 대상이 종속됨):
+12:03:37.864     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BuildCompileTraverse: (대상 ID:42)" 대상("BuildCompile" 대상이 종속됨):
                    조건이 잘못되어 "MSBuild" 작업을 건너뜁니다. ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true')이(가) ('' == 'true' and '' != '' and '' != ''  and '' == 'true')(으)로 확인되었습니다.
-16:20:37.696     1>"CPU.vcxproj" 프로젝트에 "BuildCompileTraverse" 대상을 빌드했습니다.: (대상 ID:42)
+12:03:37.864     1>"CPU.vcxproj" 프로젝트에 "BuildCompileTraverse" 대상을 빌드했습니다.: (대상 ID:42)
                    "PrepareForBuild" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "ResolveReferences" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "BeforeClCompile: (대상 ID:43)" 대상("_ClCompile" 대상이 종속됨):
-16:20:37.696     1>"CPU.vcxproj" 프로젝트에 "BeforeClCompile" 대상을 빌드했습니다.: (대상 ID:43)
+12:03:37.864     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "BeforeClCompile: (대상 ID:43)" 대상("_ClCompile" 대상이 종속됨):
+12:03:37.864     1>"CPU.vcxproj" 프로젝트에 "BeforeClCompile" 대상을 빌드했습니다.: (대상 ID:43)
                    "ComputeMIDLGeneratedCompileInputs" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeCLInputPDBName: (대상 ID:44)" 대상("_ClCompile" 대상이 종속됨):
-16:20:37.696     1>"CPU.vcxproj" 프로젝트에 "ComputeCLInputPDBName" 대상을 빌드했습니다.: (대상 ID:44)
+12:03:37.864     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeCLInputPDBName: (대상 ID:44)" 대상("_ClCompile" 대상이 종속됨):
+12:03:37.864     1>"CPU.vcxproj" 프로젝트에 "ComputeCLInputPDBName" 대상을 빌드했습니다.: (대상 ID:44)
                    "ResolveReferences" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeReferenceCLInput: (대상 ID:45)" 대상("_ClCompile" 대상이 종속됨):
+12:03:37.864     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeReferenceCLInput: (대상 ID:45)" 대상("_ClCompile" 대상이 종속됨):
                    조건이 잘못되어 "WriteLinesToFile" 작업을 건너뜁니다. (('@(_ReferenceCopyLocalPaths)'!='') and '$(DesignTimeBuild)' != 'true')이(가) ((''!='') and '' != 'true')(으)로 확인되었습니다.
                    조건이 잘못되어 "Message" 작업을 건너뜁니다. ('$(_REFERENCE_DEBUG)'=='true')이(가) (''=='true')(으)로 확인되었습니다.
-16:20:37.696     1>"CPU.vcxproj" 프로젝트에 "ComputeReferenceCLInput" 대상을 빌드했습니다.: (대상 ID:45)
-16:20:37.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "WarnCompileDuplicatedFilename: (대상 ID:46)" 대상("_ClCompile" 대상이 종속됨):
+12:03:37.865     1>"CPU.vcxproj" 프로젝트에 "ComputeReferenceCLInput" 대상을 빌드했습니다.: (대상 ID:45)
+12:03:37.865     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "WarnCompileDuplicatedFilename: (대상 ID:46)" 대상("_ClCompile" 대상이 종속됨):
                    조건이 잘못되어 "VCMessage" 작업을 건너뜁니다. ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())')이(가) ('' != 'true' and 'firework_cpu.cpp' != 'firework_cpu.cpp' and 'x64\Debug\' == 'x64\Debug\')(으)로 확인되었습니다.
-16:20:37.696     1>"CPU.vcxproj" 프로젝트에 "WarnCompileDuplicatedFilename" 대상을 빌드했습니다.: (대상 ID:46)
-16:20:37.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "FixupCLCompileOptions: (대상 ID:47)" 대상("_ClCompile" 대상이 종속됨):
-16:20:37.696     1>"CPU.vcxproj" 프로젝트에 "FixupCLCompileOptions" 대상을 빌드했습니다.: (대상 ID:47)
-16:20:37.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "MakeDirsForCl: (대상 ID:48)" 대상("_ClCompile" 대상이 종속됨):
+12:03:37.869     1>"CPU.vcxproj" 프로젝트에 "WarnCompileDuplicatedFilename" 대상을 빌드했습니다.: (대상 ID:46)
+12:03:37.869     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "FixupCLCompileOptions: (대상 ID:47)" 대상("_ClCompile" 대상이 종속됨):
+12:03:37.870     1>"CPU.vcxproj" 프로젝트에 "FixupCLCompileOptions" 대상을 빌드했습니다.: (대상 ID:47)
+12:03:37.870     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "MakeDirsForCl: (대상 ID:48)" 대상("_ClCompile" 대상이 종속됨):
                    추가된 항목: ClDirsToMake=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\x64\Debug
                    추가된 항목: ClDirsToMake=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\x64\Debug
                    추가된 항목: ClDirsToMake=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\x64\Debug
@@ -2939,7 +2939,7 @@
                            \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\x64\Debug
                            \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\x64\Debug
                            \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\x64\Debug
-16:20:37.699     1>"CPU.vcxproj" 프로젝트에 "MakeDirsForCl" 대상을 빌드했습니다.: (대상 ID:48)
+12:03:37.875     1>"CPU.vcxproj" 프로젝트에 "MakeDirsForCl" 대상을 빌드했습니다.: (대상 ID:48)
                    "_SelectedFiles" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "ComputeMIDLGeneratedCompileInputs" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "ComputeCLInputPDBName" 대상을 건너뜁니다. 이전에 빌드되었습니다.
@@ -2947,11 +2947,11 @@
                    "WarnCompileDuplicatedFilename" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "FixupCLCompileOptions" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "SelectCustomBuild" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:37.699     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "SelectClCompile: (대상 ID:49)" 대상("ClCompile" 대상이 종속됨):
-16:20:37.699     1>"CPU.vcxproj" 프로젝트에 "SelectClCompile" 대상을 빌드했습니다.: (대상 ID:49)
+12:03:37.875     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "SelectClCompile: (대상 ID:49)" 대상("ClCompile" 대상이 종속됨):
+12:03:37.875     1>"CPU.vcxproj" 프로젝트에 "SelectClCompile" 대상을 빌드했습니다.: (대상 ID:49)
                    조건이 잘못되어 "GenerateTargetFrameworkMonikerAttribute" 대상을 건너뜁니다. ('$(GenerateTargetFrameworkAttribute)' == 'true')이(가) ('false' == 'true')(으)로 확인되었습니다.
                    조건이 잘못되어 "ManagedIncrementalBuildPreProcessDependencyGraph" 대상을 건너뜁니다. ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True')이(가) ('firework_cpu.cpp' != '' and 'false' == 'True')(으)로 확인되었습니다.
-16:20:37.699     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "ClCompile: (대상 ID:50)" 대상("_ClCompile" 대상이 종속됨):
+12:03:37.875     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "ClCompile: (대상 ID:50)" 대상("_ClCompile" 대상이 종속됨):
                    설정 속성: CLToolArchitecture=Native32Bit
                    조건이 잘못되어 "Delete" 작업을 건너뜁니다. ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName)))이(가) ('EditAndContinue' != '' and 'EditAndContinue' != 'None' and 'EditAndContinue' != 'OldStyle' and 'x64\Debug\vc142.pdb' != '' and !Exists(x64\Debug\vc142.pdb))(으)로 확인되었습니다.
                    조건이 잘못되어 "MultiToolTask" 작업을 건너뜁니다. ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' == 'true')이(가) ('' != 'true' and '' == '' and 'false' == 'true')(으)로 확인되었습니다.
@@ -3128,59 +3128,60 @@
                      	x64\Debug\CPU.tlog\CL.read.1.tlog(작업 ID:26)
                      \\PUB.MME.DONGGUK.EDU\HOME\S2019112540\DESKTOP\FIREWORK\PARALLEL_PROJECT\FIREWORK\FIREWORK\CPU\FIREWORK_CPU.CPP에 대한 출력:(작업 ID:26)
                      	\\PUB.MME.DONGGUK.EDU\HOME\S2019112540\DESKTOP\FIREWORK\PARALLEL_PROJECT\FIREWORK\FIREWORK\CPU\X64\DEBUG\FIREWORK_CPU.OBJ(작업 ID:26)
-                     \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\firework_cpu.cpp이(가) 2021-06-03 오후 4:18:51에서 수정되었으므로 firework_cpu.cpp이(가) 컴파일됩니다.(작업 ID:26)
+                     \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\firework_cpu.cpp이(가) 2021-06-11 오후 12:01:43에서 수정되었으므로 firework_cpu.cpp이(가) 컴파일됩니다.(작업 ID:26)
                      \\PUB.MME.DONGGUK.EDU\HOME\S2019112540\DESKTOP\FIREWORK\PARALLEL_PROJECT\FIREWORK\FIREWORK\CPU\FIREWORK_CPU.CPP에 대한 출력:(작업 ID:26)
                      	\\PUB.MME.DONGGUK.EDU\HOME\S2019112540\DESKTOP\FIREWORK\PARALLEL_PROJECT\FIREWORK\FIREWORK\CPU\X64\DEBUG\FIREWORK_CPU.OBJ(작업 ID:26)
                      쓰기 추적 로그:(작업 ID:26)
                      	x64\Debug\CPU.tlog\CL.write.1.tlog(작업 ID:26)
                      도구로 전달된 환경 변수:(작업 ID:26)
-                       VS_UNICODE_OUTPUT=1904(작업 ID:26)
+                       VS_UNICODE_OUTPUT=1032(작업 ID:26)
                      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc142.pdb" /Gd /TP /FC /errorReport:prompt firework_cpu.cpp(작업 ID:26)
                      Tracking command:(작업 ID:26)
-                     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\x64\Debug\CPU.tlog /r \\PUB.MME.DONGGUK.EDU\HOME\S2019112540\DESKTOP\FIREWORK\PARALLEL_PROJECT\FIREWORK\FIREWORK\CPU\FIREWORK_CPU.CPP /b MSBuildConsole_CancelEvent0fdc1d7337964e21bb61ebb67f39581e  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x64\CL.exe"  /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc142.pdb" /Gd /TP /FC /errorReport:prompt firework_cpu.cpp(작업 ID:26)
+                     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\x64\Debug\CPU.tlog /r \\PUB.MME.DONGGUK.EDU\HOME\S2019112540\DESKTOP\FIREWORK\PARALLEL_PROJECT\FIREWORK\FIREWORK\CPU\FIREWORK_CPU.CPP /b MSBuildConsole_CancelEvent3ec6eb2e531b46d6880b10882214d281  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x64\CL.exe"  /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc142.pdb" /Gd /TP /FC /errorReport:prompt firework_cpu.cpp(작업 ID:26)
                      firework_cpu.cpp(작업 ID:26)
-16:20:38.241     1>\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\firework_cpu.cpp(219,25): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+12:03:38.503     1>\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\firework_cpu.cpp(242,25): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+12:03:38.504     1>\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\firework_cpu.cpp(249,25): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
                    "CL" 작업을 실행했습니다.(작업 ID:26)
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "ClCompile" 대상을 빌드했습니다.: (대상 ID:50)
+12:03:40.666     1>"CPU.vcxproj" 프로젝트에 "ClCompile" 대상을 빌드했습니다.: (대상 ID:50)
                    조건이 잘못되어 "RunSelectedFileNativeCodeAnalysis" 대상을 건너뜁니다. ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='')이(가) ('false'=='true' and ''!='')(으)로 확인되었습니다.
                    조건이 잘못되어 "ManagedIncrementalBuildPostProcessDependencyGraph" 대상을 건너뜁니다. ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True')이(가) ('firework_cpu.cpp' != '' and 'false' == 'True')(으)로 확인되었습니다.
                    조건이 잘못되어 "NoAnalysisToolEnabledWarning" 대상을 건너뜁니다. ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='false' AND '$(EnableClangTidyCodeAnalysis)'=='false')이(가) ('false'=='true' AND 'true'=='false' AND 'false'=='false')(으)로 확인되었습니다.
                    조건이 잘못되어 "RunSelectedFileClangTidy" 대상을 건너뜁니다. ('$(RunClangCppAnalysis)'=='true' AND '$(SelectedFiles)'!='')이(가) ('false'=='true' AND ''!='')(으)로 확인되었습니다.
                    조건이 잘못되어 "MicrosoftAnalysisIncompatiableWithClangCl" 대상을 건너뜁니다. ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='true' AND '$(UseClangCl)'=='true')이(가) ('false'=='true' AND 'true'=='true' AND ''=='true')(으)로 확인되었습니다.
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "AfterClCompile: (대상 ID:51)" 대상("_ClCompile" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "AfterClCompile" 대상을 빌드했습니다.: (대상 ID:51)
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_ClCompile: (대상 ID:52)" 대상("_BuildCompileAction" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "_ClCompile" 대상을 빌드했습니다.: (대상 ID:52)
+12:03:40.666     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "AfterClCompile: (대상 ID:51)" 대상("_ClCompile" 대상이 종속됨):
+12:03:40.666     1>"CPU.vcxproj" 프로젝트에 "AfterClCompile" 대상을 빌드했습니다.: (대상 ID:51)
+12:03:40.666     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_ClCompile: (대상 ID:52)" 대상("_BuildCompileAction" 대상이 종속됨):
+12:03:40.666     1>"CPU.vcxproj" 프로젝트에 "_ClCompile" 대상을 빌드했습니다.: (대상 ID:52)
                    조건이 잘못되어 "_ResGen" 대상을 건너뜁니다. ('@(EmbeddedResource)'!='')이(가) (''!='')(으)로 확인되었습니다.
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "BeforeResourceCompile: (대상 ID:53)" 대상("_ResourceCompile" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "BeforeResourceCompile" 대상을 빌드했습니다.: (대상 ID:53)
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "MakeDirsForResourceCompile: (대상 ID:54)" 대상("_ResourceCompile" 대상이 종속됨):
+12:03:40.666     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "BeforeResourceCompile: (대상 ID:53)" 대상("_ResourceCompile" 대상이 종속됨):
+12:03:40.666     1>"CPU.vcxproj" 프로젝트에 "BeforeResourceCompile" 대상을 빌드했습니다.: (대상 ID:53)
+12:03:40.666     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "MakeDirsForResourceCompile: (대상 ID:54)" 대상("_ResourceCompile" 대상이 종속됨):
                    추가된 항목: RcDirsToMake=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\x64\Debug
                    "MakeDir" 작업(작업 ID:27)
                      작업 매개 변수:Directories=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\x64\Debug(작업 ID:27)
                    "MakeDir" 작업을 실행했습니다.(작업 ID:27)
                    삭제된 항목: RcDirsToMake=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\x64\Debug
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "MakeDirsForResourceCompile" 대상을 빌드했습니다.: (대상 ID:54)
+12:03:40.669     1>"CPU.vcxproj" 프로젝트에 "MakeDirsForResourceCompile" 대상을 빌드했습니다.: (대상 ID:54)
                    조건이 잘못되어 "ResourceCompile" 대상을 건너뜁니다. ('@(ResourceCompile)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "AfterResourceCompile: (대상 ID:55)" 대상("_ResourceCompile" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "AfterResourceCompile" 대상을 빌드했습니다.: (대상 ID:55)
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_ResourceCompile: (대상 ID:56)" 대상("_BuildCompileAction" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "_ResourceCompile" 대상을 빌드했습니다.: (대상 ID:56)
+12:03:40.669     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "AfterResourceCompile: (대상 ID:55)" 대상("_ResourceCompile" 대상이 종속됨):
+12:03:40.669     1>"CPU.vcxproj" 프로젝트에 "AfterResourceCompile" 대상을 빌드했습니다.: (대상 ID:55)
+12:03:40.669     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_ResourceCompile: (대상 ID:56)" 대상("_BuildCompileAction" 대상이 종속됨):
+12:03:40.669     1>"CPU.vcxproj" 프로젝트에 "_ResourceCompile" 대상을 빌드했습니다.: (대상 ID:56)
                    조건이 잘못되어 "_ImpLib" 대상을 건너뜁니다. ('$(ImpLibCompiled)' == 'true')이(가) ('' == 'true')(으)로 확인되었습니다.
                    조건이 잘못되어 "_Lib" 대상을 건너뜁니다. ('$(LibCompiled)' == 'true')이(가) ('' == 'true')(으)로 확인되었습니다.
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "AfterBuildCompileEvent: (대상 ID:57)" 대상("_BuildCompileAction" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "AfterBuildCompileEvent" 대상을 빌드했습니다.: (대상 ID:57)
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_BuildCompileAction: (대상 ID:58)" 대상("BuildCompile" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "_BuildCompileAction" 대상을 빌드했습니다.: (대상 ID:58)
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BuildCompile: (대상 ID:59)" 대상("Build" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "BuildCompile" 대상을 빌드했습니다.: (대상 ID:59)
+12:03:40.669     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "AfterBuildCompileEvent: (대상 ID:57)" 대상("_BuildCompileAction" 대상이 종속됨):
+12:03:40.669     1>"CPU.vcxproj" 프로젝트에 "AfterBuildCompileEvent" 대상을 빌드했습니다.: (대상 ID:57)
+12:03:40.669     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_BuildCompileAction: (대상 ID:58)" 대상("BuildCompile" 대상이 종속됨):
+12:03:40.669     1>"CPU.vcxproj" 프로젝트에 "_BuildCompileAction" 대상을 빌드했습니다.: (대상 ID:58)
+12:03:40.669     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BuildCompile: (대상 ID:59)" 대상("Build" 대상이 종속됨):
+12:03:40.669     1>"CPU.vcxproj" 프로젝트에 "BuildCompile" 대상을 빌드했습니다.: (대상 ID:59)
                    "PrepareProjectReferences" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BuildLinkTraverse: (대상 ID:60)" 대상("BuildLink" 대상이 종속됨):
+12:03:40.669     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BuildLinkTraverse: (대상 ID:60)" 대상("BuildLink" 대상이 종속됨):
                    조건이 잘못되어 "MSBuild" 작업을 건너뜁니다. ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true')이(가) ('' == 'true' and '' != '' and '' != ''  and '' == 'true')(으)로 확인되었습니다.
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "BuildLinkTraverse" 대상을 빌드했습니다.: (대상 ID:60)
+12:03:40.670     1>"CPU.vcxproj" 프로젝트에 "BuildLinkTraverse" 대상을 빌드했습니다.: (대상 ID:60)
                    "PrepareForBuild" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "ResolveReferences" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeLegacyManifestEmbedding: (대상 ID:61)" 대상("_BuildLinkAction" 대상이 종속됨):
+12:03:40.670     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeLegacyManifestEmbedding: (대상 ID:61)" 대상("_BuildLinkAction" 대상이 종속됨):
                    추가된 항목: 
                        Manifest=
                            temp
@@ -3210,22 +3211,22 @@
                                    TrackerLogDirectory=x64\Debug\CPU.tlog\
                                    UpdateFileHashes=false
                                    VerboseOutput=true
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "ComputeLegacyManifestEmbedding" 대상을 빌드했습니다.: (대상 ID:61)
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "BeforeLink: (대상 ID:62)" 대상("_Link" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "BeforeLink" 대상을 빌드했습니다.: (대상 ID:62)
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeRCOutputs: (대상 ID:63)" 대상("ComputeRCGeneratedLinkInputs" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "ComputeRCOutputs" 대상을 빌드했습니다.: (대상 ID:63)
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeRCGeneratedLinkInputs: (대상 ID:64)" 대상("_Link" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "ComputeRCGeneratedLinkInputs" 대상을 빌드했습니다.: (대상 ID:64)
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeManifestGeneratedLinkerInputs: (대상 ID:65)" 대상("_Link" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "ComputeManifestGeneratedLinkerInputs" 대상을 빌드했습니다.: (대상 ID:65)
+12:03:40.670     1>"CPU.vcxproj" 프로젝트에 "ComputeLegacyManifestEmbedding" 대상을 빌드했습니다.: (대상 ID:61)
+12:03:40.670     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "BeforeLink: (대상 ID:62)" 대상("_Link" 대상이 종속됨):
+12:03:40.670     1>"CPU.vcxproj" 프로젝트에 "BeforeLink" 대상을 빌드했습니다.: (대상 ID:62)
+12:03:40.670     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeRCOutputs: (대상 ID:63)" 대상("ComputeRCGeneratedLinkInputs" 대상이 종속됨):
+12:03:40.670     1>"CPU.vcxproj" 프로젝트에 "ComputeRCOutputs" 대상을 빌드했습니다.: (대상 ID:63)
+12:03:40.670     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeRCGeneratedLinkInputs: (대상 ID:64)" 대상("_Link" 대상이 종속됨):
+12:03:40.670     1>"CPU.vcxproj" 프로젝트에 "ComputeRCGeneratedLinkInputs" 대상을 빌드했습니다.: (대상 ID:64)
+12:03:40.670     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeManifestGeneratedLinkerInputs: (대상 ID:65)" 대상("_Link" 대상이 종속됨):
+12:03:40.670     1>"CPU.vcxproj" 프로젝트에 "ComputeManifestGeneratedLinkerInputs" 대상을 빌드했습니다.: (대상 ID:65)
                    "ComputeCustomBuildOutput" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "ComputeMIDLGeneratedCompileInputs" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "ComputeCLInputPDBName" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "ComputeReferenceCLInput" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "WarnCompileDuplicatedFilename" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "FixupCLCompileOptions" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeCLOutputs: (대상 ID:66)" 대상("ComputeCLGeneratedLinkInputs" 대상이 종속됨):
+12:03:40.670     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeCLOutputs: (대상 ID:66)" 대상("ComputeCLGeneratedLinkInputs" 대상이 종속됨):
                    추가된 항목: 
                        Obj=
                            x64\Debug\firework_cpu.obj
@@ -3296,8 +3297,8 @@
                                    WholeProgramOptimization=false
                                    WinRTNoStdLib=false
                                    XMLDocumentationFileName=x64\Debug\
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "ComputeCLOutputs" 대상을 빌드했습니다.: (대상 ID:66)
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeCLGeneratedLinkInputs: (대상 ID:67)" 대상("_Link" 대상이 종속됨):
+12:03:40.671     1>"CPU.vcxproj" 프로젝트에 "ComputeCLOutputs" 대상을 빌드했습니다.: (대상 ID:66)
+12:03:40.671     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeCLGeneratedLinkInputs: (대상 ID:67)" 대상("_Link" 대상이 종속됨):
                    추가된 항목: 
                        Link=
                            x64\Debug\firework_cpu.obj
@@ -3339,11 +3340,11 @@
                                    TypeLibraryResourceID=1
                                    UACExecutionLevel=AsInvoker
                                    UACUIAccess=false
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "ComputeCLGeneratedLinkInputs" 대상을 빌드했습니다.: (대상 ID:67)
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeLinkInputsFromProject: (대상 ID:68)" 대상("_Link" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "ComputeLinkInputsFromProject" 대상을 빌드했습니다.: (대상 ID:68)
+12:03:40.671     1>"CPU.vcxproj" 프로젝트에 "ComputeCLGeneratedLinkInputs" 대상을 빌드했습니다.: (대상 ID:67)
+12:03:40.671     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeLinkInputsFromProject: (대상 ID:68)" 대상("_Link" 대상이 종속됨):
+12:03:40.671     1>"CPU.vcxproj" 프로젝트에 "ComputeLinkInputsFromProject" 대상을 빌드했습니다.: (대상 ID:68)
                    조건이 잘못되어 "ComputeReferenceLinkInputs" 대상을 건너뜁니다. (@(ProjectReference) != '')이(가) ( != '')(으)로 확인되었습니다.
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeManifestInputsTargets: (대상 ID:69)" 대상("_Link" 대상이 종속됨):
+12:03:40.671     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeManifestInputsTargets: (대상 ID:69)" 대상("_Link" 대상이 종속됨):
                    추가된 항목: 
                        Manifest=
                            temp
@@ -3374,10 +3375,10 @@
                                    TrackerLogDirectory=x64\Debug\CPU.tlog\
                                    UpdateFileHashes=false
                                    VerboseOutput=true
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "ComputeManifestInputsTargets" 대상을 빌드했습니다.: (대상 ID:69)
+12:03:40.671     1>"CPU.vcxproj" 프로젝트에 "ComputeManifestInputsTargets" 대상을 빌드했습니다.: (대상 ID:69)
                    조건이 잘못되어 "ManifestResourceCompile" 대상을 건너뜁니다. ('$(EmbedManifestBy)' == 'LINK' and '@(Manifest)' != '')이(가) ('LINK' == 'LINK' and '' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "AssignWinFXEmbeddedResource" 대상을 건너뜁니다. ('@(WinFXEmbeddedResource)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "AssignTargetPaths: (대상 ID:70)" 대상("PrepareResourceNames" 대상이 종속됨):
+12:03:40.671     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "AssignTargetPaths: (대상 ID:70)" 대상("PrepareResourceNames" 대상이 종속됨):
                    "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 어셈블리에서 "AssignTargetPath" 작업을 사용합니다.
                    "AssignTargetPath" 작업(작업 ID:28)
                      작업 매개 변수:RootFolder=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU(작업 ID:28)
@@ -3392,9 +3393,9 @@
                      작업 매개 변수:RootFolder=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU(작업 ID:31)
                    "AssignTargetPath" 작업을 실행했습니다.(작업 ID:31)
                    조건이 잘못되어 "AssignTargetPath" 작업을 건너뜁니다. ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest')이(가) (''=='' and ''=='.manifest')(으)로 확인되었습니다.
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "AssignTargetPaths" 대상을 빌드했습니다.: (대상 ID:70)
+12:03:40.672     1>"CPU.vcxproj" 프로젝트에 "AssignTargetPaths" 대상을 빌드했습니다.: (대상 ID:70)
                    "AssignTargetPaths" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "SplitResourcesByCulture: (대상 ID:71)" 대상("PrepareResourceNames" 대상이 종속됨):
+12:03:40.672     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "SplitResourcesByCulture: (대상 ID:71)" 대상("PrepareResourceNames" 대상이 종속됨):
                    조건이 잘못되어 "Warning" 작업을 건너뜁니다. ('@(ResxWithNoCulture)'!='')이(가) (''!='')(으)로 확인되었습니다.
                    조건이 잘못되어 "Warning" 작업을 건너뜁니다. ('@(ResxWithCulture)'!='')이(가) (''!='')(으)로 확인되었습니다.
                    조건이 잘못되어 "Warning" 작업을 건너뜁니다. ('@(NonResxWithCulture)'!='')이(가) (''!='')(으)로 확인되었습니다.
@@ -3402,13 +3403,13 @@
                    "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 어셈블리에서 "AssignCulture" 작업을 사용합니다.
                    "AssignCulture" 작업(작업 ID:32)
                    "AssignCulture" 작업을 실행했습니다.(작업 ID:32)
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "SplitResourcesByCulture" 대상을 빌드했습니다.: (대상 ID:71)
+12:03:40.672     1>"CPU.vcxproj" 프로젝트에 "SplitResourcesByCulture" 대상을 빌드했습니다.: (대상 ID:71)
                    조건이 잘못되어 "CreateManifestResourceNames" 대상을 건너뜁니다. ('@(EmbeddedResource)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "CreateCustomManifestResourceNames: (대상 ID:72)" 대상("PrepareResourceNames" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "CreateCustomManifestResourceNames" 대상을 빌드했습니다.: (대상 ID:72)
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "PrepareResourceNames: (대상 ID:73)" 대상("_Link" 대상이 종속됨):
-16:20:41.056     1>"CPU.vcxproj" 프로젝트에 "PrepareResourceNames" 대상을 빌드했습니다.: (대상 ID:73)
-16:20:41.056     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "MakeDirsForLink: (대상 ID:74)" 대상("_Link" 대상이 종속됨):
+12:03:40.672     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "CreateCustomManifestResourceNames: (대상 ID:72)" 대상("PrepareResourceNames" 대상이 종속됨):
+12:03:40.672     1>"CPU.vcxproj" 프로젝트에 "CreateCustomManifestResourceNames" 대상을 빌드했습니다.: (대상 ID:72)
+12:03:40.672     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "PrepareResourceNames: (대상 ID:73)" 대상("_Link" 대상이 종속됨):
+12:03:40.672     1>"CPU.vcxproj" 프로젝트에 "PrepareResourceNames" 대상을 빌드했습니다.: (대상 ID:73)
+12:03:40.672     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "MakeDirsForLink: (대상 ID:74)" 대상("_Link" 대상이 종속됨):
                    설정 속성: _LinkImportLibrary=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.lib
                    추가된 항목: _LinkImportLibraryFile=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.lib
                    추가된 항목: LinkDirsToMake=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug
@@ -3430,25 +3431,25 @@
                            \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug
                            \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\
                    삭제된 항목: _LinkImportLibraryFile=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.lib
-16:20:41.071     1>"CPU.vcxproj" 프로젝트에 "MakeDirsForLink" 대상을 빌드했습니다.: (대상 ID:74)
-16:20:41.071     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "DoLinkOutputFilesMatch: (대상 ID:75)" 대상("_Link" 대상이 종속됨):
+12:03:40.710     1>"CPU.vcxproj" 프로젝트에 "MakeDirsForLink" 대상을 빌드했습니다.: (대상 ID:74)
+12:03:40.710     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "DoLinkOutputFilesMatch: (대상 ID:75)" 대상("_Link" 대상이 종속됨):
                    추가된 항목: _OutputFileFromLink=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.exe
                    조건이 잘못되어 "VCMessage" 작업을 건너뜁니다. ('@(_OutputFileFromLink)' == '')이(가) ('\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.exe' == '')(으)로 확인되었습니다.
                    조건이 잘못되어 "VCMessage" 작업을 건너뜁니다. ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))')이(가) ('\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.exe' != '' and '\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.exe' != '\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.exe')(으)로 확인되었습니다.
                    조건이 잘못되어 "VCMessage" 작업을 건너뜁니다. ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)')이(가) ('\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.exe' != '' and '.exe' != '' and '.exe' != '.exe')(으)로 확인되었습니다.
                    조건이 잘못되어 "VCMessage" 작업을 건너뜁니다. ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)')이(가) ('\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.exe' != '' and 'CPU' != '' and 'CPU' != 'CPU')(으)로 확인되었습니다.
                    조건이 잘못되어 "VCMessage" 작업을 건너뜁니다. ('%(Link.MinimumRequiredVersion)' != '' and ('%(Link.Subsystem)' == '' or '%(Link.Subsystem)' == 'NotSet'))이(가) ('' != '' and ('Console' == '' or 'Console' == 'NotSet'))(으)로 확인되었습니다.
-16:20:41.071     1>"CPU.vcxproj" 프로젝트에 "DoLinkOutputFilesMatch" 대상을 빌드했습니다.: (대상 ID:75)
-16:20:41.071     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "PreLinkEvent: (대상 ID:76)" 대상("_Link" 대상이 종속됨):
+12:03:40.710     1>"CPU.vcxproj" 프로젝트에 "DoLinkOutputFilesMatch" 대상을 빌드했습니다.: (대상 ID:75)
+12:03:40.710     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "PreLinkEvent: (대상 ID:76)" 대상("_Link" 대상이 종속됨):
                    조건이 잘못되어 "Message" 작업을 건너뜁니다. ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '')이(가) ('' != '' and '' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "Exec" 작업을 건너뜁니다. ('%(PreLinkEvent.Command)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:41.071     1>"CPU.vcxproj" 프로젝트에 "PreLinkEvent" 대상을 빌드했습니다.: (대상 ID:76)
-16:20:41.071     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "ComputeLinkSwitches: (대상 ID:77)" 대상("Link" 대상이 종속됨):
+12:03:40.710     1>"CPU.vcxproj" 프로젝트에 "PreLinkEvent" 대상을 빌드했습니다.: (대상 ID:76)
+12:03:40.710     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "ComputeLinkSwitches: (대상 ID:77)" 대상("Link" 대상이 종속됨):
                    설정 속성: Link_MinimalRebuildFromTracking=true
                    설정 속성: LinkToolArchitecture=Native32Bit
                    설정 속성: _GenerateWindowsMetadata=
-16:20:41.071     1>"CPU.vcxproj" 프로젝트에 "ComputeLinkSwitches" 대상을 빌드했습니다.: (대상 ID:77)
-16:20:41.071     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "Link: (대상 ID:78)" 대상("_Link" 대상이 종속됨):
+12:03:40.712     1>"CPU.vcxproj" 프로젝트에 "ComputeLinkSwitches" 대상을 빌드했습니다.: (대상 ID:77)
+12:03:40.712     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "Link: (대상 ID:78)" 대상("_Link" 대상이 종속됨):
                    "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll" 어셈블리에서 "Link" 작업을 사용합니다.
                    "Link" 작업(작업 ID:34)
                      작업 매개 변수:BuildingInIde=True(작업 ID:34)
@@ -3613,13 +3614,14 @@
                      	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.24.28314\LIB\X64\OLDNAMES.LIB(작업 ID:34)
                      	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.24.28314\LIB\X64\VCRUNTIMED.LIB(작업 ID:34)
                      	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.16299.0\UCRT\X64\UCRTD.LIB(작업 ID:34)
-                     	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.24.28314\BIN\HOSTX86\X64\CVTRES.EXE(작업 ID:34)
+                     	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.24.28314\BIN\HOSTX86\X64\MSPDBSRV.EXE(작업 ID:34)
                      소스를 컴파일해야 합니다. 입력 내용 \\PUB.MME.DONGGUK.EDU\HOME\S2019112540\DESKTOP\FIREWORK\PARALLEL_PROJECT\FIREWORK\FIREWORK\CPU\X64\DEBUG\FIREWORK_CPU.OBJ이(가) 출력 내용 \\PUB.MME.DONGGUK.EDU\HOME\S2019112540\DESKTOP\FIREWORK\PARALLEL_PROJECT\FIREWORK\FIREWORK\X64\DEBUG\CPU.PDB보다 최신입니다.(작업 ID:34)
                      도구로 전달된 환경 변수:(작업 ID:34)
-                       VS_UNICODE_OUTPUT=1328(작업 ID:34)
+                       VS_UNICODE_OUTPUT=1716(작업 ID:34)
                      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x64\link.exe /ERRORREPORT:PROMPT /OUT:"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\usr\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.lib" /MACHINE:X64 x64\Debug\firework_cpu.obj(작업 ID:34)
                      Tracking command:(작업 ID:34)
-                     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\x64\Debug\CPU.tlog /r \\PUB.MME.DONGGUK.EDU\HOME\S2019112540\DESKTOP\FIREWORK\PARALLEL_PROJECT\FIREWORK\FIREWORK\CPU\X64\DEBUG\FIREWORK_CPU.OBJ /b MSBuildConsole_CancelEvent4b96a6aba8a948c98a60948191a6b249  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\usr\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.lib" /MACHINE:X64 x64\Debug\firework_cpu.obj(작업 ID:34)
+                     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\x64\Debug\CPU.tlog /r \\PUB.MME.DONGGUK.EDU\HOME\S2019112540\DESKTOP\FIREWORK\PARALLEL_PROJECT\FIREWORK\FIREWORK\CPU\X64\DEBUG\FIREWORK_CPU.OBJ /b MSBuildConsole_CancelEvent7b75489272bc4d6983fd1b5117637928  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\usr\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.lib" /MACHINE:X64 x64\Debug\firework_cpu.obj(작업 ID:34)
+                     LINK : \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.(작업 ID:34)
                      출력 속성: LinkSkippedExecution=False(작업 ID:34)
                    "Link" 작업을 실행했습니다.(작업 ID:34)
                    "Message" 작업(작업 ID:35)
@@ -3633,36 +3635,36 @@
                    조건이 잘못되어 "VCMessage" 작업을 건너뜁니다. (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
                                 %(Link.GenerateDebugInformation) == 'true' and %(Link.ProgramDataBaseFileName) != '')이(가) (('LINK' != 'LINK' or '' != 'true' or 'False' == 'true') and
                                 DebugFastLink == 'true' and  != '')(으)로 확인되었습니다.
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "Link" 대상을 빌드했습니다.: (대상 ID:78)
+12:03:44.296     1>"CPU.vcxproj" 프로젝트에 "Link" 대상을 빌드했습니다.: (대상 ID:78)
                    조건이 잘못되어 "MetaGenInputsOutputs" 대상을 건너뜁니다. ('$(EnableManagedIncrementalBuild)' == 'True')이(가) ('false' == 'True')(으)로 확인되었습니다.
                    조건이 잘못되어 "ComputeMetaGenInputs" 대상을 건너뜁니다. ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false' and '$(CLRSupport)'!='NetCore')이(가) ('false'!='' and 'false'!='false' and 'false'!='NetCore')(으)로 확인되었습니다.
                    조건이 잘못되어 "MetaGen" 대상을 건너뜁니다. ('@(MetaGen)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeLinkImportLibraryOutputsForClean: (대상 ID:79)" 대상("_Link" 대상이 종속됨):
+12:03:44.296     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeLinkImportLibraryOutputsForClean: (대상 ID:79)" 대상("_Link" 대상이 종속됨):
                    조건이 잘못되어 "WriteLinesToFile" 작업을 건너뜁니다. ('@(_LinkSecondaryOutput)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "ComputeLinkImportLibraryOutputsForClean" 대상을 빌드했습니다.: (대상 ID:79)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "AfterLink: (대상 ID:80)" 대상("_Link" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "AfterLink" 대상을 빌드했습니다.: (대상 ID:80)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_Link: (대상 ID:81)" 대상("_BuildLinkAction" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "_Link" 대상을 빌드했습니다.: (대상 ID:81)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_ALink: (대상 ID:82)" 대상("_BuildLinkAction" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "_ALink" 대상을 빌드했습니다.: (대상 ID:82)
+12:03:44.298     1>"CPU.vcxproj" 프로젝트에 "ComputeLinkImportLibraryOutputsForClean" 대상을 빌드했습니다.: (대상 ID:79)
+12:03:44.298     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "AfterLink: (대상 ID:80)" 대상("_Link" 대상이 종속됨):
+12:03:44.298     1>"CPU.vcxproj" 프로젝트에 "AfterLink" 대상을 빌드했습니다.: (대상 ID:80)
+12:03:44.298     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_Link: (대상 ID:81)" 대상("_BuildLinkAction" 대상이 종속됨):
+12:03:44.298     1>"CPU.vcxproj" 프로젝트에 "_Link" 대상을 빌드했습니다.: (대상 ID:81)
+12:03:44.298     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_ALink: (대상 ID:82)" 대상("_BuildLinkAction" 대상이 종속됨):
+12:03:44.298     1>"CPU.vcxproj" 프로젝트에 "_ALink" 대상을 빌드했습니다.: (대상 ID:82)
                    "ComputeLegacyManifestEmbedding" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_Manifest: (대상 ID:83)" 대상("_BuildLinkAction" 대상이 종속됨):
+12:03:44.298     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_Manifest: (대상 ID:83)" 대상("_BuildLinkAction" 대상이 종속됨):
                    조건이 잘못되어 "CallTarget" 작업을 건너뜁니다. ('$(LegacyManifestEmbedding)' == 'true')이(가) ('' == 'true')(으)로 확인되었습니다.
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "_Manifest" 대상을 빌드했습니다.: (대상 ID:83)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "RegisterOutput: (대상 ID:84)" 대상("_BuildLinkAction" 대상이 종속됨):
+12:03:44.298     1>"CPU.vcxproj" 프로젝트에 "_Manifest" 대상을 빌드했습니다.: (대상 ID:83)
+12:03:44.298     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "RegisterOutput: (대상 ID:84)" 대상("_BuildLinkAction" 대상이 종속됨):
                    조건이 잘못되어 "Exec" 작업을 건너뜁니다. ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true')이(가) ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'!='true')(으)로 확인되었습니다.
                    조건이 잘못되어 "Exec" 작업을 건너뜁니다. ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true')이(가) ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'=='true')(으)로 확인되었습니다.
                    조건이 잘못되어 "Exec" 작업을 건너뜁니다. ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true')이(가) ('Application'=='Application' and 'false'=='true' and 'false'!='true')(으)로 확인되었습니다.
                    조건이 잘못되어 "Exec" 작업을 건너뜁니다. ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true')이(가) ('Application'=='Application' and 'false'=='true' and 'false'=='true')(으)로 확인되었습니다.
                    조건이 잘못되어 "VCMessage" 작업을 건너뜁니다. ('$(_RegisterOutputExitCode)' != '' and '$(_RegisterOutputExitCode)' != '0')이(가) ('' != '' and '' != '0')(으)로 확인되었습니다.
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "RegisterOutput" 대상을 빌드했습니다.: (대상 ID:84)
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "RegisterOutput" 대상을 빌드했습니다.: (대상 ID:84)
                    "PrepareForBuild" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "ResolveReferences" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ResolvedXDCMake: (대상 ID:85)" 대상("_XdcMake" 대상이 종속됨):
+12:03:44.299     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ResolvedXDCMake: (대상 ID:85)" 대상("_XdcMake" 대상이 종속됨):
                    조건이 잘못되어 "MSBuild" 작업을 건너뜁니다. ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '$(_ClCompileGenerateXMLDocumentationFiles)' == 'true')이(가) ('' == '.vcxproj' and '' != '' and '' != '' and '' == 'true')(으)로 확인되었습니다.
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "ResolvedXDCMake" 대상을 빌드했습니다.: (대상 ID:85)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeCLCompileGeneratedXDCFiles: (대상 ID:86)" 대상("_XdcMake" 대상이 종속됨):
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "ResolvedXDCMake" 대상을 빌드했습니다.: (대상 ID:85)
+12:03:44.299     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeCLCompileGeneratedXDCFiles: (대상 ID:86)" 대상("_XdcMake" 대상이 종속됨):
                    추가된 항목: 
                        XdcMake=
                            temp
@@ -3685,66 +3687,66 @@
                                    OutputFile=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\x64\Debug\CPU.xml
                                    SuppressStartupBanner=true
                                    TrackerLogDirectory=x64\Debug\CPU.tlog\
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "ComputeCLCompileGeneratedXDCFiles" 대상을 빌드했습니다.: (대상 ID:86)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "MakeDirsForXdcMake: (대상 ID:87)" 대상("_XdcMake" 대상이 종속됨):
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "ComputeCLCompileGeneratedXDCFiles" 대상을 빌드했습니다.: (대상 ID:86)
+12:03:44.299     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "MakeDirsForXdcMake: (대상 ID:87)" 대상("_XdcMake" 대상이 종속됨):
                    "MakeDir" 작업(작업 ID:36)
                    "MakeDir" 작업을 실행했습니다.(작업 ID:36)
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "MakeDirsForXdcMake" 대상을 빌드했습니다.: (대상 ID:87)
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "MakeDirsForXdcMake" 대상을 빌드했습니다.: (대상 ID:87)
                    조건이 잘못되어 "XdcMake" 대상을 건너뜁니다. ('@(XdcMake)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_XdcMake: (대상 ID:88)" 대상("_BuildLinkAction" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "_XdcMake" 대상을 빌드했습니다.: (대상 ID:88)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeCLCompileGeneratedSbrFiles: (대상 ID:89)" 대상("_BscMake" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "ComputeCLCompileGeneratedSbrFiles" 대상을 빌드했습니다.: (대상 ID:89)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "MakeDirsForBscMake: (대상 ID:90)" 대상("_BscMake" 대상이 종속됨):
+12:03:44.299     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_XdcMake: (대상 ID:88)" 대상("_BuildLinkAction" 대상이 종속됨):
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "_XdcMake" 대상을 빌드했습니다.: (대상 ID:88)
+12:03:44.299     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "ComputeCLCompileGeneratedSbrFiles: (대상 ID:89)" 대상("_BscMake" 대상이 종속됨):
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "ComputeCLCompileGeneratedSbrFiles" 대상을 빌드했습니다.: (대상 ID:89)
+12:03:44.299     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "MakeDirsForBscMake: (대상 ID:90)" 대상("_BscMake" 대상이 종속됨):
                    "MakeDir" 작업(작업 ID:37)
                    "MakeDir" 작업을 실행했습니다.(작업 ID:37)
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "MakeDirsForBscMake" 대상을 빌드했습니다.: (대상 ID:90)
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "MakeDirsForBscMake" 대상을 빌드했습니다.: (대상 ID:90)
                    조건이 잘못되어 "BscMake" 대상을 건너뜁니다. ('@(BscMake)' != '')이(가) ('' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "CustomBuildStep" 대상을 건너뜁니다. ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='')이(가) ('' != '' and ''=='')(으)로 확인되었습니다.
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_BscMake: (대상 ID:91)" 대상("_BuildLinkAction" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "_BscMake" 대상을 빌드했습니다.: (대상 ID:91)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "_GenerateSatelliteAssemblyInputs: (대상 ID:92)" 대상("CreateSatelliteAssemblies" 대상이 종속됨):
+12:03:44.299     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_BscMake: (대상 ID:91)" 대상("_BuildLinkAction" 대상이 종속됨):
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "_BscMake" 대상을 빌드했습니다.: (대상 ID:91)
+12:03:44.299     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "_GenerateSatelliteAssemblyInputs: (대상 ID:92)" 대상("CreateSatelliteAssemblies" 대상이 종속됨):
                    조건이 잘못되어 "Warning" 작업을 건너뜁니다. ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='')이(가) (''!='' and ''=='')(으)로 확인되었습니다.
                    조건이 잘못되어 "Warning" 작업을 건너뜁니다. ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='')이(가) (''!='' and ''=='')(으)로 확인되었습니다.
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "_GenerateSatelliteAssemblyInputs" 대상을 빌드했습니다.: (대상 ID:92)
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "_GenerateSatelliteAssemblyInputs" 대상을 빌드했습니다.: (대상 ID:92)
                    조건이 잘못되어 "ComputeIntermediateSatelliteAssemblies" 대상을 건너뜁니다. (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '')이(가) ( != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "GenerateSatelliteAssemblies" 대상을 건너뜁니다. ('@(_SatelliteAssemblyResourceInputs)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "CreateSatelliteAssemblies: (대상 ID:93)" 대상("_BuildLinkAction" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "CreateSatelliteAssemblies" 대상을 빌드했습니다.: (대상 ID:93)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_Appverifier: (대상 ID:94)" 대상("_BuildLinkAction" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "_Appverifier" 대상을 빌드했습니다.: (대상 ID:94)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_Deploy: (대상 ID:95)" 대상("_BuildLinkAction" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "_Deploy" 대상을 빌드했습니다.: (대상 ID:95)
+12:03:44.299     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "CreateSatelliteAssemblies: (대상 ID:93)" 대상("_BuildLinkAction" 대상이 종속됨):
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "CreateSatelliteAssemblies" 대상을 빌드했습니다.: (대상 ID:93)
+12:03:44.299     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_Appverifier: (대상 ID:94)" 대상("_BuildLinkAction" 대상이 종속됨):
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "_Appverifier" 대상을 빌드했습니다.: (대상 ID:94)
+12:03:44.299     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_Deploy: (대상 ID:95)" 대상("_BuildLinkAction" 대상이 종속됨):
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "_Deploy" 대상을 빌드했습니다.: (대상 ID:95)
                    조건이 잘못되어 "ComputeIntermediateSatelliteAssemblies" 대상을 건너뜁니다. (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '')이(가) ( != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "_CopyFilesMarkedCopyLocal" 대상을 건너뜁니다. ('@(ReferenceCopyLocalPaths)' != '')이(가) ('' != '')(으)로 확인되었습니다.
                    "AssignTargetPaths" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "_SplitProjectReferencesByFileExistence" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "_GetProjectReferenceTargetFrameworkProperties" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" 파일에 있는 "GetCopyToOutputDirectoryXamlAppDefs: (대상 ID:96)" 대상("GetCopyToOutputDirectoryItems" 대상이 종속됨):
+12:03:44.299     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" 파일에 있는 "GetCopyToOutputDirectoryXamlAppDefs: (대상 ID:96)" 대상("GetCopyToOutputDirectoryItems" 대상이 종속됨):
                    "AssignTargetPath" 작업(작업 ID:38)
                      작업 매개 변수:RootFolder=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU(작업 ID:38)
                    "AssignTargetPath" 작업을 실행했습니다.(작업 ID:38)
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "GetCopyToOutputDirectoryXamlAppDefs" 대상을 빌드했습니다.: (대상 ID:96)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "GetCopyToOutputDirectoryItems: (대상 ID:97)" 대상("_CopySourceItemsToOutputDirectory" 대상이 종속됨):
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "GetCopyToOutputDirectoryXamlAppDefs" 대상을 빌드했습니다.: (대상 ID:96)
+12:03:44.299     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "GetCopyToOutputDirectoryItems: (대상 ID:97)" 대상("_CopySourceItemsToOutputDirectory" 대상이 종속됨):
                    설정 속성: _GCTODIKeepDuplicates=false
                    설정 속성: _GCTODIKeepMetadata=CopyToOutputDirectory;TargetPath
                    조건이 잘못되어 "MSBuild" 작업을 건너뜁니다. ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true')이(가) ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true')(으)로 확인되었습니다.
                    "AssignTargetPath" 작업(작업 ID:39)
                      작업 매개 변수:RootFolder=\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU(작업 ID:39)
                    "AssignTargetPath" 작업을 실행했습니다.(작업 ID:39)
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "GetCopyToOutputDirectoryItems" 대상을 빌드했습니다.: (대상 ID:97)
+12:03:44.299     1>"CPU.vcxproj" 프로젝트에 "GetCopyToOutputDirectoryItems" 대상을 빌드했습니다.: (대상 ID:97)
                    조건이 잘못되어 "_CopyOutOfDateSourceItemsToOutputDirectory" 대상을 건너뜁니다. ( '@(_SourceItemsToCopyToOutputDirectory)' != '' )이(가) ( '' != '' )(으)로 확인되었습니다.
                    조건이 잘못되어 "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" 대상을 건너뜁니다. ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' )이(가) ( '' != '' )(으)로 확인되었습니다.
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "_CopySourceItemsToOutputDirectory: (대상 ID:98)" 대상("CopyFilesToOutputDirectory" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "_CopySourceItemsToOutputDirectory" 대상을 빌드했습니다.: (대상 ID:98)
+12:03:44.300     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "_CopySourceItemsToOutputDirectory: (대상 ID:98)" 대상("CopyFilesToOutputDirectory" 대상이 종속됨):
+12:03:44.300     1>"CPU.vcxproj" 프로젝트에 "_CopySourceItemsToOutputDirectory" 대상을 빌드했습니다.: (대상 ID:98)
                    조건이 잘못되어 "_CopyAppConfigFile" 대상을 건너뜁니다. ( '@(AppConfigWithTargetPath)' != '' )이(가) ( '' != '' )(으)로 확인되었습니다.
                    조건이 잘못되어 "_CopyManifestFiles" 대상을 건너뜁니다. ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' )이(가) ( ''=='true' or ''=='true' )(으)로 확인되었습니다.
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "_CheckForCompileOutputs: (대상 ID:99)" 대상("CopyFilesToOutputDirectory" 대상이 종속됨):
+12:03:44.300     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "_CheckForCompileOutputs: (대상 ID:99)" 대상("CopyFilesToOutputDirectory" 대상이 종속됨):
                    설정 속성: _DocumentationFileProduced=false
                    설정 속성: _DebugSymbolsProduced=false
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "_CheckForCompileOutputs" 대상을 빌드했습니다.: (대상 ID:99)
+12:03:44.301     1>"CPU.vcxproj" 프로젝트에 "_CheckForCompileOutputs" 대상을 빌드했습니다.: (대상 ID:99)
                    조건이 잘못되어 "_SGenCheckForOutputs" 대상을 건너뜁니다. ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto'))이(가) ('Off' == 'On' or (''!='' and 'Off' == 'Auto'))(으)로 확인되었습니다.
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "CopyFilesToOutputDirectory: (대상 ID:100)" 대상("PrepareForRun" 대상이 종속됨):
+12:03:44.301     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "CopyFilesToOutputDirectory: (대상 ID:100)" 대상("PrepareForRun" 대상이 종속됨):
                    설정 속성: CreateHardLinksForCopyFilesToOutputDirectoryIfPossible=false
                    설정 속성: CreateSymbolicLinksForCopyFilesToOutputDirectoryIfPossible=false
                    설정 속성: ErrorIfLinkFailsForCopyFilesToOutputDirectory=false
@@ -3762,21 +3764,21 @@
                    조건이 잘못되어 "Copy" 작업을 건너뜁니다. ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' )이(가) ('' != '' or '' != '' or '' != '' or '' != '' )(으)로 확인되었습니다.
                    조건이 잘못되어 "Copy" 작업을 건너뜁니다. ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '')이(가) ('' != 'true' and '' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "Message" 작업을 건너뜁니다. ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '')이(가) ('' != 'true' and '' != '')(으)로 확인되었습니다.
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "CopyFilesToOutputDirectory" 대상을 빌드했습니다.: (대상 ID:100)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "PrepareForRun: (대상 ID:101)" 대상("_BuildLinkAction" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "PrepareForRun" 대상을 빌드했습니다.: (대상 ID:101)
+12:03:44.301     1>"CPU.vcxproj" 프로젝트에 "CopyFilesToOutputDirectory" 대상을 빌드했습니다.: (대상 ID:100)
+12:03:44.301     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "PrepareForRun: (대상 ID:101)" 대상("_BuildLinkAction" 대상이 종속됨):
+12:03:44.301     1>"CPU.vcxproj" 프로젝트에 "PrepareForRun" 대상을 빌드했습니다.: (대상 ID:101)
                    조건이 잘못되어 "CustomBuildStep" 대상을 건너뜁니다. ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='')이(가) ('' != '' and ''=='')(으)로 확인되었습니다.
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "PostBuildEvent: (대상 ID:102)" 대상("_BuildLinkAction" 대상이 종속됨):
+12:03:44.301     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" 파일에 있는 "PostBuildEvent: (대상 ID:102)" 대상("_BuildLinkAction" 대상이 종속됨):
                    조건이 잘못되어 "Message" 작업을 건너뜁니다. ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '')이(가) ('' != '' and '' != '')(으)로 확인되었습니다.
                    조건이 잘못되어 "Exec" 작업을 건너뜁니다. ('%(PostBuildEvent.Command)' != '')이(가) ('' != '')(으)로 확인되었습니다.
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "PostBuildEvent" 대상을 빌드했습니다.: (대상 ID:102)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_BuildLinkAction: (대상 ID:103)" 대상("BuildLink" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "_BuildLinkAction" 대상을 빌드했습니다.: (대상 ID:103)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BuildLink: (대상 ID:104)" 대상("Build" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "BuildLink" 대상을 빌드했습니다.: (대상 ID:104)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" 파일에 있는 "AfterBuild: (대상 ID:105)" 대상("Build" 대상이 종속됨):
-16:20:43.696     1>"CPU.vcxproj" 프로젝트에 "AfterBuild" 대상을 빌드했습니다.: (대상 ID:105)
-16:20:43.696     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "FinalizeBuildStatus: (대상 ID:106)" 대상("Build" 대상이 종속됨):
+12:03:44.301     1>"CPU.vcxproj" 프로젝트에 "PostBuildEvent" 대상을 빌드했습니다.: (대상 ID:102)
+12:03:44.301     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "_BuildLinkAction: (대상 ID:103)" 대상("BuildLink" 대상이 종속됨):
+12:03:44.301     1>"CPU.vcxproj" 프로젝트에 "_BuildLinkAction" 대상을 빌드했습니다.: (대상 ID:103)
+12:03:44.301     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" 파일에 있는 "BuildLink: (대상 ID:104)" 대상("Build" 대상이 종속됨):
+12:03:44.301     1>"CPU.vcxproj" 프로젝트에 "BuildLink" 대상을 빌드했습니다.: (대상 ID:104)
+12:03:44.301     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" 파일에 있는 "AfterBuild: (대상 ID:105)" 대상("Build" 대상이 종속됨):
+12:03:44.301     1>"CPU.vcxproj" 프로젝트에 "AfterBuild" 대상을 빌드했습니다.: (대상 ID:105)
+12:03:44.301     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" 파일에 있는 "FinalizeBuildStatus: (대상 ID:106)" 대상("Build" 대상이 종속됨):
                    "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 어셈블리에서 "Delete" 작업을 사용합니다.
                    "Delete" 작업(작업 ID:40)
                      작업 매개 변수:Files=x64\Debug\CPU.tlog\unsuccessfulbuild(작업 ID:40)
@@ -3786,61 +3788,43 @@
                      작업 매개 변수:Files=x64\Debug\CPU.tlog\CPU.lastbuildstate(작업 ID:41)
                      "x64\Debug\CPU.tlog\CPU.lastbuildstate"에 연결(touching)하고 있습니다.(작업 ID:41)
                    "Touch" 작업을 실행했습니다.(작업 ID:41)
-16:20:43.711     1>"CPU.vcxproj" 프로젝트에 "FinalizeBuildStatus" 대상을 빌드했습니다.: (대상 ID:106)
+12:03:44.319     1>"CPU.vcxproj" 프로젝트에 "FinalizeBuildStatus" 대상을 빌드했습니다.: (대상 ID:106)
                    "_CheckForInvalidConfigurationAndPlatform" 대상을 건너뜁니다. 이전에 빌드되었습니다.
                    "_CheckForInvalidConfigurationAndPlatform" 대상을 건너뜁니다. 이전에 빌드되었습니다.
-16:20:43.711     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" 파일에 있는 "Build: (대상 ID:107)" 대상(진입점):
-16:20:43.711     1>"CPU.vcxproj" 프로젝트에 "Build" 대상을 빌드했습니다.: (대상 ID:107)
-16:20:43.711     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+12:03:44.319     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트의 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" 파일에 있는 "Build: (대상 ID:107)" 대상(진입점):
+12:03:44.319     1>"CPU.vcxproj" 프로젝트에 "Build" 대상을 빌드했습니다.: (대상 ID:107)
+12:03:44.320     1>"\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
 
 프로젝트 평가 성능 요약:
-      109ms  \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj   1회 호출
+      123ms  \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj   1회 호출
 
 프로젝트 성능 요약:
-     6079ms  \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj   1회 호출
-               6079ms  Build                                      1회 호출
+     6609ms  \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj   1회 호출
+               6609ms  Build                                      1회 호출
 
 대상 성능 요약:
-        0ms  MakeDirsForResourceCompile                 1회 호출
-        0ms  ComputeLinkImportLibraryOutputsForClean    1회 호출
-        0ms  ComputeLinkSwitches                        1회 호출
-        0ms  PreLinkEvent                               1회 호출
-        0ms  DoLinkOutputFilesMatch                     1회 호출
-        0ms  PrepareResourceNames                       1회 호출
-        0ms  CreateCustomManifestResourceNames          1회 호출
-        0ms  SplitResourcesByCulture                    1회 호출
-        0ms  AssignTargetPaths                          1회 호출
-        0ms  ComputeManifestInputsTargets               1회 호출
-        0ms  ComputeLinkInputsFromProject               1회 호출
-        0ms  AfterLink                                  1회 호출
-        0ms  ComputeCLGeneratedLinkInputs               1회 호출
+        0ms  Build                                      1회 호출
         0ms  ComputeManifestGeneratedLinkerInputs       1회 호출
         0ms  ComputeRCGeneratedLinkInputs               1회 호출
         0ms  ComputeRCOutputs                           1회 호출
         0ms  BeforeLink                                 1회 호출
         0ms  ComputeLegacyManifestEmbedding             1회 호출
-        0ms  BuildLinkTraverse                          1회 호출
         0ms  BuildCompile                               1회 호출
         0ms  _BuildCompileAction                        1회 호출
         0ms  AfterBuildCompileEvent                     1회 호출
         0ms  _ResourceCompile                           1회 호출
-        0ms  ComputeCLOutputs                           1회 호출
         0ms  AfterResourceCompile                       1회 호출
-        0ms  _Link                                      1회 호출
-        0ms  _Manifest                                  1회 호출
-        0ms  AfterBuild                                 1회 호출
-        0ms  BuildLink                                  1회 호출
-        0ms  _BuildLinkAction                           1회 호출
-        0ms  PostBuildEvent                             1회 호출
-        0ms  PrepareForRun                              1회 호출
-        0ms  CopyFilesToOutputDirectory                 1회 호출
-        0ms  _CheckForCompileOutputs                    1회 호출
-        0ms  _CopySourceItemsToOutputDirectory          1회 호출
         0ms  GetCopyToOutputDirectoryItems              1회 호출
-        0ms  GetCopyToOutputDirectoryXamlAppDefs        1회 호출
-        0ms  _ALink                                     1회 호출
-        0ms  _Deploy                                    1회 호출
+        0ms  BeforeResourceCompile                      1회 호출
+        0ms  _ClCompile                                 1회 호출
+        0ms  AfterClCompile                             1회 호출
+        0ms  _CopySourceItemsToOutputDirectory          1회 호출
+        0ms  SelectClCompile                            1회 호출
         0ms  CreateSatelliteAssemblies                  1회 호출
+        0ms  ComputeCLGeneratedLinkInputs               1회 호출
+        0ms  ComputeLinkInputsFromProject               1회 호출
+        0ms  ComputeManifestInputsTargets               1회 호출
+        0ms  SplitResourcesByCulture                    1회 호출
         0ms  _GenerateSatelliteAssemblyInputs           1회 호출
         0ms  _BscMake                                   1회 호출
         0ms  MakeDirsForBscMake                         1회 호출
@@ -3849,89 +3833,108 @@
         0ms  MakeDirsForXdcMake                         1회 호출
         0ms  ComputeCLCompileGeneratedXDCFiles          1회 호출
         0ms  ResolvedXDCMake                            1회 호출
-        0ms  RegisterOutput                             1회 호출
-        0ms  _Appverifier                               1회 호출
-        0ms  BeforeResourceCompile                      1회 호출
-        0ms  Build                                      1회 호출
-        0ms  _SelectedFiles                             1회 호출
-        0ms  SelectCustomBuild                          1회 호출
-        0ms  _ClCompile                                 1회 호출
-        0ms  PreBuildEvent                              1회 호출
-        0ms  BeforeBuildGenerateSources                 1회 호출
-        0ms  BuildGenerateSourcesTraverse               1회 호출
-        0ms  ResolveReferences                          1회 호출
-        0ms  AfterResolveReferences                     1회 호출
-        0ms  AssignProjectConfiguration                 1회 호출
-        0ms  ResolveAssemblyReferences                  1회 호출
-        0ms  ResolveSDKReferences                       1회 호출
-        0ms  _GetProjectReferenceTargetFrameworkProperties   1회 호출
-        0ms  SetCABuildNativeEnvironmentVariables       1회 호출
-        0ms  _CheckWindowsSDKInstalled                  1회 호출
-        0ms  SetBuildDefaultEnvironmentVariables        1회 호출
-        0ms  GetReferenceAssemblyPaths                  1회 호출
-        0ms  GetFrameworkPaths                          1회 호출
-        0ms  ExpandSDKReferences                        1회 호출
-        0ms  _PrepareForReferenceResolution             1회 호출
-        0ms  BeforeResolveReferences                    1회 호출
-        0ms  MakeDirsForMidl                            1회 호출
-        0ms  AfterClCompile                             1회 호출
-        0ms  SetTelemetryEnvironmentVariables           1회 호출
-        0ms  SelectClCompile                            1회 호출
-        0ms  _PrepareForBuild                           1회 호출
-        0ms  FixupCLCompileOptions                      1회 호출
-        0ms  WarnCompileDuplicatedFilename              1회 호출
-        0ms  ComputeReferenceCLInput                    1회 호출
+        0ms  CopyFilesToOutputDirectory                 1회 호출
+        0ms  _Manifest                                  1회 호출
+        0ms  _Link                                      1회 호출
+        0ms  AfterLink                                  1회 호출
+        0ms  _Deploy                                    1회 호출
+        0ms  PreLinkEvent                               1회 호출
+        0ms  DoLinkOutputFilesMatch                     1회 호출
+        0ms  GetCopyToOutputDirectoryXamlAppDefs        1회 호출
+        0ms  PrepareResourceNames                       1회 호출
+        0ms  CreateCustomManifestResourceNames          1회 호출
+        0ms  _ALink                                     1회 호출
         0ms  ComputeCLInputPDBName                      1회 호출
+        0ms  _Appverifier                               1회 호출
+        0ms  AfterResolveReferences                     1회 호출
+        0ms  BuildLink                                  1회 호출
+        0ms  _CheckWindowsSDKInstalled                  1회 호출
+        0ms  SetCABuildNativeEnvironmentVariables       1회 호출
+        0ms  _BuildLinkAction                           1회 호출
+        0ms  ResolveSDKReferences                       1회 호출
+        0ms  ExpandSDKReferences                        1회 호출
+        0ms  ResolveAssemblyReferences                  1회 호출
         0ms  BeforeClCompile                            1회 호출
-        0ms  _Xsd                                       1회 호출
+        0ms  ResolveReferences                          1회 호출
+        0ms  PostBuildEvent                             1회 호출
+        0ms  PrepareProjectReferences                   1회 호출
+        0ms  BeforeBuildGenerateSources                 1회 호출
+        0ms  PreBuildEvent                              1회 호출
+        0ms  GetReferenceAssemblyPaths                  1회 호출
+        0ms  SelectCustomBuild                          1회 호출
+        0ms  _SelectedFiles                             1회 호출
+        0ms  ComputeCustomBuildOutput                   1회 호출
         0ms  BuildCompileTraverse                       1회 호출
+        0ms  AfterBuild                                 1회 호출
+        0ms  BuildGenerateSources                       1회 호출
+        0ms  _BuildGenerateSourcesAction                1회 호출
         0ms  AfterBuildGenerateSourcesEvent             1회 호출
         0ms  AfterBuildGenerateSources                  1회 호출
+        0ms  _SplitProjectReferencesByFileExistence     1회 호출
         0ms  _Midl                                      1회 호출
         0ms  AfterMidl                                  1회 호출
         0ms  ComputeMIDLGeneratedCompileInputs          1회 호출
-        0ms  BuildGenerateSources                       1회 호출
-        0ms  PrepareProjectReferences                   1회 호출
-        1ms  _BuildGenerateSourcesAction                1회 호출
-        1ms  ComputeCustomBuildOutput                   1회 호출
+        0ms  MakeDirsForMidl                            1회 호출
+        0ms  _Xsd                                       1회 호출
+        0ms  BeforeResolveReferences                    1회 호출
+        0ms  PrepareForRun                              1회 호출
+        0ms  SetBuildDefaultEnvironmentVariables        1회 호출
+        1ms  AssignTargetPaths                          1회 호출
+        1ms  BuildGenerateSourcesTraverse               1회 호출
+        1ms  RegisterOutput                             1회 호출
+        1ms  ComputeReferenceCLInput                    1회 호출
+        1ms  BuildLinkTraverse                          1회 호출
+        1ms  _PrepareForReferenceResolution             1회 호출
+        1ms  GetFrameworkPaths                          1회 호출
+        1ms  FixupCLCompileOptions                      1회 호출
+        1ms  _GetProjectReferenceTargetFrameworkProperties   1회 호출
         1ms  GetResolvedWinMD                           1회 호출
-        1ms  ResolveProjectReferences                   1회 호출
-        1ms  _SplitProjectReferencesByFileExistence     1회 호출
+        1ms  AssignProjectConfiguration                 1회 호출
+        1ms  ComputeCLOutputs                           1회 호출
+        1ms  _CheckForCompileOutputs                    1회 호출
+        2ms  ComputeLinkSwitches                        1회 호출
         2ms  CopyFileToFolders                          1회 호출
-        3ms  _CheckForInvalidConfigurationAndPlatform   1회 호출
-        3ms  MakeDirsForCl                              1회 호출
-        4ms  CustomBuild                                1회 호출
-       16ms  MakeDirsForLink                            1회 호출
-       16ms  FinalizeBuildStatus                        1회 호출
-       23ms  PrepareForBuild                            1회 호출
-       25ms  InitializeBuildStatus                      1회 호출
-     2624ms  Link                                       1회 호출
-     3356ms  ClCompile                                  1회 호출
+        2ms  ComputeLinkImportLibraryOutputsForClean    1회 호출
+        2ms  _PrepareForBuild                           1회 호출
+        3ms  MakeDirsForResourceCompile                 1회 호출
+        4ms  WarnCompileDuplicatedFilename              1회 호출
+        5ms  MakeDirsForCl                              1회 호출
+        7ms  CustomBuild                                1회 호출
+       11ms  SetTelemetryEnvironmentVariables           1회 호출
+       15ms  ResolveProjectReferences                   1회 호출
+       18ms  FinalizeBuildStatus                        1회 호출
+       28ms  PrepareForBuild                            1회 호출
+       33ms  _CheckForInvalidConfigurationAndPlatform   1회 호출
+       38ms  MakeDirsForLink                            1회 호출
+       45ms  InitializeBuildStatus                      1회 호출
+     2791ms  ClCompile                                  1회 호출
+     3584ms  Link                                       1회 호출
 
 작업 성능 요약:
-        0ms  SetEnv                                     8회 호출
-        0ms  AssignProjectConfiguration                 1회 호출
-        0ms  MSBuild                                    1회 호출
-        0ms  AssignTargetPath                           6회 호출
         0ms  AssignCulture                              1회 호출
-        0ms  Delete                                     1회 호출
-        1ms  Message                                    3회 호출
+        1ms  AssignTargetPath                           6회 호출
         1ms  CheckVCToolsetVersion                      1회 호출
-        3ms  ReadLinesFromFile                          1회 호출
-        6ms  GetOutOfDateItems                          3회 호출
-       10ms  Touch                                      2회 호출
-       12ms  WriteLinesToFile                           1회 호출
-       28ms  MakeDir                                    9회 호출
-     2624ms  Link                                       1회 호출
-     3353ms  CL                                         1회 호출
+        1ms  SetEnv                                     8회 호출
+        1ms  MSBuild                                    1회 호출
+        1ms  AssignProjectConfiguration                 1회 호출
+        3ms  Message                                    3회 호출
+        4ms  ReadLinesFromFile                          1회 호출
+        5ms  Delete                                     1회 호출
+        9ms  GetOutOfDateItems                          3회 호출
+       13ms  WriteLinesToFile                           1회 호출
+       35ms  Touch                                      2회 호출
+       50ms  MakeDir                                    9회 호출
+     2789ms  CL                                         1회 호출
+     3582ms  Link                                       1회 호출
 
 빌드했습니다.
 
                    "\\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\CPU.vcxproj"(Build 대상)(1) ->
                    (ClCompile 대상) -> 
-                     \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\firework_cpu.cpp(219,25): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+                     \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\firework_cpu.cpp(242,25): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+                     \\pub.mme.dongguk.edu\home\s2019112540\Desktop\Firework\parallel_project\Firework\Firework\CPU\firework_cpu.cpp(249,25): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 
-    경고 1개
+    경고 2개
     오류 0개
 
-경과 시간: 00:00:06.03
+경과 시간: 00:00:06.32
